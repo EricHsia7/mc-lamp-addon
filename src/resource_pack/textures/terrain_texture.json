@@ -1,0 +1,11 @@
+{
+  "texture_name": "atlas.terrain",
+  "resource_pack_name": "lamp",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "lamp_a": {
+      "textures": "textures/blocks/lamp_a.png"
+    }
+  }
+}
