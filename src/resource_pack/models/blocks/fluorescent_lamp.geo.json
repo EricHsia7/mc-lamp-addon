@@ -1,0 +1,62 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.lamp.fluorescent_lamp",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "outer",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 16, 16],
+              "uv": {
+                "north": { "uv": [0, 0], "uv_size": [64, 64] },
+                "east": { "uv": [0, 0], "uv_size": [64, 64] },
+                "south": { "uv": [0, 0], "uv_size": [64, 64] },
+                "west": { "uv": [0, 0], "uv_size": [64, 64] },
+                "up": { "uv": [64, 64], "uv_size": [-64, -64] },
+                "down": { "uv": [64, 64], "uv_size": [-64, -64] }
+              }
+            }
+          ]
+        },
+        {
+          "name": "fluorescence",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-7, 1, -7],
+              "size": [14, 14, 14],
+              "uv": {
+                "north": { "uv": [64, 0], "uv_size": [64, 64] },
+                "east": { "uv": [64, 64], "uv_size": [64, 64] },
+                "south": { "uv": [0, 64], "uv_size": [64, 64] },
+                "west": { "uv": [64, 0], "uv_size": [64, 64] },
+                "up": { "uv": [64, 128], "uv_size": [64, -64] },
+                "down": { "uv": [64, 128], "uv_size": [-64, -64] }
+              }
+            }
+          ]
+        }
+      ],
+      "item_display_transforms": {
+        "thirdperson_righthand": {
+          "rotation": [0, 0, 0],
+          "translation": [0, 0, 0],
+          "scale": [1, 1, 1],
+          "rotation_pivot": [0, 0, 0],
+          "scale_pivot": [0, 0, 0]
+        }
+      }
+    }
+  ]
+}
