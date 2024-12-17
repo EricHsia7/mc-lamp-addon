@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:incandescent_light_bulb"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["GGG", "GIG", "SSS"],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "S": {
+        "item": "minecraft:stone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "lamp:incandescent_light_bulb"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ]
+  }
+}
