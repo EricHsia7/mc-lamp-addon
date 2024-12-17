@@ -3,7 +3,7 @@
   "minecraft:geometry": [
     {
       "description": {
-        "identifier": "geometry.lamp.incandescent_light_bulb",
+        "identifier": "geometry.incandescent_light_bulb",
         "texture_width": 64,
         "texture_height": 224,
         "visible_bounds_width": 2,
