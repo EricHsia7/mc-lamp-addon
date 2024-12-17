@@ -25,6 +25,7 @@
       },
       "minecraft:material_instances": {
         "*": {
+          "texture": "incandescent_light_bulb",
           "render_method": "blend"
         }
       },
