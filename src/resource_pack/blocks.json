@@ -3,5 +3,9 @@
   "lamp:lamp_a": {
     "textures": "lamp_a",
     "sound": "glass"
+  },
+  "lamp:incandescent_light_bulb": {
+    "textures": "incandescent_light_bulb",
+    "sound": "glass"
   }
 }

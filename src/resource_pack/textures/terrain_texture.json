@@ -6,6 +6,9 @@
   "texture_data": {
     "lamp_a": {
       "textures": "textures/blocks/lamp_a.png"
+    },
+    "incandescent_light_bulb": {
+      "textures": "textures/blocks/incandescent_light_bulb.png"
     }
   }
 }

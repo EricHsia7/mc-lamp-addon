@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lamp:incandescent_light_bulb",
+      "is_experimental": false,
+      "register_to_creative_menu": true
+    },
+    "components": {
+      "minecraft:display_name": "Incandescent Light Bulb",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 5
+      },
+      "minecraft:friction": 0.9,
+      "minecraft:flammable": false,
+      "minecraft:map_color": "#FDF1D1",
+      "minecraft:light_dampening": 5,
+      "minecraft:light_emission": 15,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": false,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.lamp.incandescent_light_bulb",
+        "bone_visibility": {}
+      }
+    }
+  }
+}
