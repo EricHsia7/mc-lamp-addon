@@ -27,6 +27,30 @@
         "*": {
           "texture": "incandescent_light_bulb",
           "render_method": "blend"
+        },
+        "up": {
+          "texture": "incandescent_light_bulb",
+          "render_method": "blend"
+        },
+        "down": {
+          "texture": "incandescent_light_bulb",
+          "render_method": "blend"
+        },
+        "north": {
+          "texture": "incandescent_light_bulb",
+          "render_method": "blend"
+        },
+        "east": {
+          "texture": "incandescent_light_bulb",
+          "render_method": "blend"
+        },
+        "south": {
+          "texture": "incandescent_light_bulb",
+          "render_method": "blend"
+        },
+        "west": {
+          "texture": "incandescent_light_bulb",
+          "render_method": "blend"
         }
       },
       "minecraft:geometry": {
