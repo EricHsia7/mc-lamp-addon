@@ -29,7 +29,7 @@
         }
       },
       "minecraft:geometry": {
-        "identifier": "geometry.incandescent_light_bulb",
+        "identifier": "geometry.lamp.incandescent_light_bulb",
         "bone_visibility": {
           "button": true,
           "bottom": true,
