@@ -12,7 +12,7 @@
       },
       "bones": [
         {
-          "name": "outer",
+          "name": "glasses",
           "pivot": [0, 0, 0],
           "cubes": [
             {

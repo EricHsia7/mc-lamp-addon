@@ -35,11 +35,8 @@
       "minecraft:geometry": {
         "identifier": "geometry.lamp.fluorescent_lamp",
         "bone_visibility": {
-          "button": true,
-          "bottom": true,
           "glasses": true,
-          "strings": true,
-          "light": true
+          "fluorescence": true
         }
       }
     }
