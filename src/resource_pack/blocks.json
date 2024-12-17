@@ -1,11 +1,11 @@
 {
   "format_version": "1.21.40",
-  "lamp:lamp_a": {
-    "textures": "lamp_a",
-    "sound": "glass"
-  },
   "lamp:incandescent_light_bulb": {
     "textures": "incandescent_light_bulb",
+    "sound": "glass"
+  },
+  "lamp:fluorescent_lamp": {
+    "textures": "fluorescent_lamp",
     "sound": "glass"
   }
 }

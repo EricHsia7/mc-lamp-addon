@@ -4,11 +4,11 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
-    "lamp_a": {
-      "textures": "textures/blocks/lamp_a.png"
-    },
     "incandescent_light_bulb": {
       "textures": "textures/blocks/incandescent_light_bulb.png"
+    },
+    "fluorescent_lamp": {
+      "textures": "textures/blocks/fluorescent_lamp.png"
     }
   }
 }

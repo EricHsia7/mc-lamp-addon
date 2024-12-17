@@ -17,10 +17,10 @@
     "components": {
       "minecraft:display_name": "Incandescent Light Bulb",
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 5
+        "seconds_to_destroy": 2
       },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 5
+        "explosion_resistance": 2
       },
       "minecraft:friction": 0.4,
       "minecraft:flammable": false,
