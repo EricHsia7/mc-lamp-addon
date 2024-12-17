@@ -5,10 +5,10 @@
   "num_mip_levels": 4,
   "texture_data": {
     "lamp_a": {
-      "textures": "textures/blocks/lamp_a.png"
+      "textures": "textures/blocks/lamp_a"
     },
     "incandescent_light_bulb": {
-      "textures": "textures/blocks/incandescent_light_bulb.png"
+      "textures": "textures/blocks/incandescent_light_bulb"
     }
   }
 }

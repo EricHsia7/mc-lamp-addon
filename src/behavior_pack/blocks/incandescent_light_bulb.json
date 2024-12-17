@@ -21,7 +21,15 @@
       "minecraft:light_emission": 15,
       "minecraft:redstone_conductivity": {
         "redstone_conductor": false,
-        "allows_wire_to_step_down": true
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "incandescent_light_bulb",
+          "render_method": "blend",
+          "face_dimming": true,
+          "ambient_occlusion": true
+        }
       },
       "minecraft:geometry": {
         "identifier": "geometry.lamp.incandescent_light_bulb",
