@@ -44,7 +44,7 @@
           "bottom": true,
           "glasses": true,
           "strings": true,
-          "light": false
+          "light": true
         }
       }
     },
