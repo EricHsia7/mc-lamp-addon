@@ -43,7 +43,7 @@
     },
     "permutations": [
       {
-        "condition": "q.block_neighbor_has_all_tags('connectable')",
+        "condition": "q.block_neighbor_has_all_tags('lamp:connectable', 'lamp:tube')",
       "minecraft:geometry": {
        "bone_visibility": {
           "connection": true
