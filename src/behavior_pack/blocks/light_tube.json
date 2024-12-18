@@ -43,27 +43,29 @@
       "minecraft:geometry": {
         "identifier": "geometry.lamp.light_tube",
         "bone_visibility": {
-          "core": {
-            "frame": true,
-            "faces": {
-              "face_up": "q.block_state('lamp:connection_up') == false",
-              "face_down": "q.block_state('lamp:connection_down') == false",
-              "face_north": "q.block_state('lamp:connection_north') == false",
-              "face_south": "q.block_state('lamp:connection_south') == false",
-              "face_west": "q.block_state('lamp:connection_west') == false",
-              "face_east": "q.block_state('lamp:connection_east') == false"
-            }
-          },
-          "connection": {
-            "connection_up": "q.block_state('lamp:connection_up')",
-            "connection_down": "q.block_state('lamp:connection_down')",
-            "connection_north": "q.block_state('lamp:connection_north')",
-            "connection_east": "q.block_state('lamp:connection_east')",
-            "connection_south": "q.block_state('lamp:connection_south')",
-            "connection_west": "q.block_state('lamp:connection_west')"
-          }
+          "frame": true,
+          "face_up": "!q.block_state('lamp:connection_up')",
+          "face_down": "!q.block_state('lamp:connection_down')",
+          "face_north": "!q.block_state('lamp:connection_north')",
+          "face_south": "!q.block_state('lamp:connection_south')",
+          "face_west": "!q.block_state('lamp:connection_west')",
+          "face_east": "!q.block_state('lamp:connection_east')",
+          "connection_up": "q.block_state('lamp:connection_up')",
+          "connection_down": "q.block_state('lamp:connection_down')",
+          "connection_north": "q.block_state('lamp:connection_north')",
+          "connection_east": "q.block_state('lamp:connection_east')",
+          "connection_south": "q.block_state('lamp:connection_south')",
+          "connection_west": "q.block_state('lamp:connection_west')"
         }
       }
-    }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('wiki:integer_state_example') == 2",
+        "components": {
+          "minecraft:friction": 0.1
+        }
+      }
+    ]
   }
 }
