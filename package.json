@@ -1,0 +1,21 @@
+{
+  "name": "@erichsia7/mc-lamp-addon",
+  "version": "1.0.0",
+  "description": "",
+  "private": false,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EricHsia7/mc-lamp-addon.git"
+  },
+  "keywords": ["mc-lamp-addon", "minecraft", "addon", "bedrock", "pocket", "edition", "lamp"],
+  "author": "EricHsia7",
+  "bugs": {
+    "url": "https://github.com/erichsia7/mc-lamp-addon/issues"
+  },
+  "homepage": "https://erichsia7.github.io/mc-lamp-addon/",
+  "devDependencies": {},
+  "dependencies": {
+    "@minecraft/server": "^1.16.0"
+  }
+}

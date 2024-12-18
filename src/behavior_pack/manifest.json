@@ -13,6 +13,10 @@
       "type": "data",
       "uuid": "3798e46d-26ba-4aad-8932-45593bbabcbc",
       "version": [1, 0, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.16.0"
     }
   ]
 }
