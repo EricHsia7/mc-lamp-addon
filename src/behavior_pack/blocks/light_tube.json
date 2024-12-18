@@ -44,20 +44,1494 @@
         "identifier": "geometry.lamp.light_tube",
         "bone_visibility": {
           "frame": true,
-          "face_up": "!q.block_state('lamp:connection_up')",
-          "face_down": "!q.block_state('lamp:connection_down')",
-          "face_north": "!q.block_state('lamp:connection_north')",
-          "face_south": "!q.block_state('lamp:connection_south')",
-          "face_west": "!q.block_state('lamp:connection_west')",
-          "face_east": "!q.block_state('lamp:connection_east')",
-          "connection_up": "q.block_state('lamp:connection_up')",
-          "connection_down": "q.block_state('lamp:connection_down')",
-          "connection_north": "q.block_state('lamp:connection_north')",
-          "connection_east": "q.block_state('lamp:connection_east')",
-          "connection_south": "q.block_state('lamp:connection_south')",
-          "connection_west": "q.block_state('lamp:connection_west')"
+          "face_up": true,
+          "face_down": true,
+          "face_north": true,
+          "face_south": true,
+          "face_west": true,
+          "face_east": true,
+          "connection_up": false,
+          "connection_down": false,
+          "connection_north": false,
+          "connection_east": false,
+          "connection_south": false,
+          "connection_west": false
         }
       }
-    }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": false,
+              "face_south": false,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": false,
+              "face_south": false,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": false,
+              "face_south": false,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": false,
+              "face_south": false,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": false,
+              "face_south": true,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": false,
+              "face_south": true,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": false,
+              "face_south": true,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": false,
+              "face_south": true,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": true,
+              "face_south": false,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": true,
+              "face_south": false,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": true,
+              "face_south": false,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": true,
+              "face_south": false,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": true,
+              "face_south": true,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": true,
+              "face_south": true,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": true,
+              "face_south": true,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": false,
+              "face_north": true,
+              "face_south": true,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": false,
+              "face_south": false,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": false,
+              "face_south": false,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": false,
+              "face_south": false,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": false,
+              "face_south": false,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": false,
+              "face_south": true,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": false,
+              "face_south": true,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": false,
+              "face_south": true,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": false,
+              "face_south": true,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": true,
+              "face_south": false,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": true,
+              "face_south": false,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": true,
+              "face_south": false,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": true,
+              "face_south": false,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": true,
+              "face_south": true,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": true,
+              "face_south": true,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": true,
+              "face_south": true,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": false,
+              "face_down": true,
+              "face_north": true,
+              "face_south": true,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": true,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": false,
+              "face_south": false,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": false,
+              "face_south": false,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": false,
+              "face_south": false,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": false,
+              "face_south": false,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": false,
+              "face_south": true,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": false,
+              "face_south": true,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": false,
+              "face_south": true,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": false,
+              "face_south": true,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": true,
+              "face_south": false,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": true,
+              "face_south": false,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": true,
+              "face_south": false,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": true,
+              "face_south": false,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": true,
+              "face_south": true,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": true,
+              "face_south": true,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": true,
+              "face_south": true,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": false,
+              "face_north": true,
+              "face_south": true,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": true,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": false,
+              "face_south": false,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": false,
+              "face_south": false,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": false,
+              "face_south": false,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": false,
+              "face_south": false,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": false,
+              "face_south": true,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": false,
+              "face_south": true,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": false,
+              "face_south": true,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": false,
+              "face_south": true,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": true,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": true,
+              "face_south": false,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": true,
+              "face_south": false,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": true,
+              "face_south": false,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": true,
+              "face_south": false,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": true,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": true,
+              "face_south": true,
+              "face_east": false,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": true,
+              "face_south": true,
+              "face_east": false,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": true,
+              "connection_west": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": true,
+              "face_south": true,
+              "face_east": true,
+              "face_west": false,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:connection_up') && !q.block_state('lamp:connection_down') && !q.block_state('lamp:connection_north') && !q.block_state('lamp:connection_south') && !q.block_state('lamp:connection_east') && !q.block_state('lamp:connection_west')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.light_tube",
+            "bone_visibility": {
+              "frame": true,
+              "face_up": true,
+              "face_down": true,
+              "face_north": true,
+              "face_south": true,
+              "face_east": true,
+              "face_west": true,
+              "connection_up": false,
+              "connection_down": false,
+              "connection_north": false,
+              "connection_south": false,
+              "connection_east": false,
+              "connection_west": false
+            }
+          }
+        }
+      }
+    ]
   }
 }
