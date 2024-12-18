@@ -4,7 +4,7 @@
     "description": "Lamp Resource Pack",
     "name": "Lamp Resource Pack",
     "uuid": "18ba2ec8-f3b7-4c73-af0b-21c7a319a24a",
-    "version": [1, 0, 1],
+    "version": [1, 0, 0],
     "min_engine_version": [1, 21, 40]
   },
   "modules": [
@@ -12,13 +12,13 @@
       "description": "Lamp Resource Module",
       "type": "resources",
       "uuid": "163fb768-2f3f-4395-bc0a-c5441a0d7b43",
-      "version": [1, 0, 1]
+      "version": [1, 0, 0]
     }
   ],
   "dependencies": [
     {
       "uuid": "2a33328b-a6d0-4bb4-a238-e562d50e5530",
-      "version": [1, 0, 1]
+      "version": [1, 0, 0]
     }
   ]
 }
