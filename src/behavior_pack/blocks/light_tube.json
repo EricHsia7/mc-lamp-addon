@@ -58,14 +58,6 @@
           "connection_west": "q.block_state('lamp:connection_west')"
         }
       }
-    },
-    "permutations": [
-      {
-        "condition": "q.block_state('wiki:integer_state_example') == 2",
-        "components": {
-          "minecraft:friction": 0.1
-        }
-      }
-    ]
+    }
   }
 }
