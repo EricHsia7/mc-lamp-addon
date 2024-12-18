@@ -9,6 +9,9 @@
     },
     "fluorescent_lamp": {
       "textures": "textures/blocks/fluorescent_lamp.png"
+    },
+    "light_tube": {
+      "textures": "textures/blocks/light_tube.png"
     }
   }
 }

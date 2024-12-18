@@ -7,5 +7,9 @@
   "lamp:fluorescent_lamp": {
     "textures": "fluorescent_lamp",
     "sound": "glass"
+  },
+  "lamp:light_tube": {
+    "textures": "light_tube",
+    "sound": "glass"
   }
 }

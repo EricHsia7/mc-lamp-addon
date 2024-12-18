@@ -28,28 +28,34 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "incandescent_light_bulb",
-          "render_method": "blend"
+          "texture": "light_tube",
+          "render_method": "opaque"
         }
       },
       "minecraft:geometry": {
-        "identifier": "geometry.lamp.incandescent_light_bulb",
+        "identifier": "geometry.lamp.light_tube",
         "bone_visibility": {
-          "core": true
-        }
-      },
-      "tag:lamp:connectable": {},
-      "tag:lamp:tube": {}
-    },
-    "permutations": [
-      {
-        "condition": "q.block_neighbor_has_all_tags('lamp:connectable', 'lamp:tube')",
-      "minecraft:geometry": {
-       "bone_visibility": {
-          "connection": true
-        }
+          "core": {
+            "frame": true,
+            "faces": {
+              "face_up": "q.block_state('lamp:connection_up') == false",
+              "face_down": "q.block_state('lamp:connection_down') == false",
+              "face_north": "q.block_state('lamp:connection_north') == false",
+              "face_south": "q.block_state('lamp:connection_south') == false",
+              "face_west": "q.block_state('lamp:connection_west') == false",
+              "face_east": "q.block_state('lamp:connection_east') == false"
+            }
+          },
+          "connection": {
+            "connection_up": "q.block_state('lamp:connection_up')",
+            "connection_down": "q.block_state('lamp:connection_down')",
+            "connection_north": "q.block_state('lamp:connection_north')",
+            "connection_east": "q.block_state('lamp:connection_east')",
+            "connection_south": "q.block_state('lamp:connection_south')",
+            "connection_west": "q.block_state('lamp:connection_west')"
+          }
         }
       }
-    ]
+    }
   }
 }
