@@ -1,4 +1,4 @@
-import { world, BlockPermutation, MinecraftBlockTypes } from '@minecraft/server';
+import { world, BlockPermutation } from '@minecraft/server';
 
 // Function to get inverse direction
 function getInverseDirection(direction) {
@@ -42,8 +42,6 @@ function updateBlockConnections(block) {
   const blockLocation = block.location;
   const dimension = block.dimension;
 
-  let properties = {};
-
   for (const [direction, offset] of Object.entries(directions)) {
     const neighborLocation = {
       x: blockLocation.x + offset.x,
@@ -54,16 +52,13 @@ function updateBlockConnections(block) {
     const neighborBlock = dimension.getBlock(neighborLocation);
 
     if (neighborBlock && neighborBlock.typeId === blockType) {
-      properties[`lamp:connection_${direction}`] = true;
+      block.setPermutation(block.permutation.withState(`lamp:connection_${direction}`, true));
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
     } else {
-      properties[`lamp:connection_${direction}`] = false;
+      block.setPermutation(block.permutation.withState(`lamp:connection_${direction}`, false));
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, false));
     }
   }
-
-  const permutation = BlockPermutation.resolve(blockType, properties);
-  block.setPermutation(permutation);
 }
 
 // Event listener for block placement
