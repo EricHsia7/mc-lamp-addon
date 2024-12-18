@@ -7,6 +7,14 @@
       "register_to_creative_menu": true,
       "menu_category": {
         "category": "items"
+      },
+      "states": {
+        "lamp:connection_up": [false, true],
+        "lamp:connection_down": [false, true],
+        "lamp:connection_north": [false, true],
+        "lamp:connection_west": [false, true],
+        "lamp:connection_east": [false, true],
+        "lamp:connection_south": [false, true]
       }
     },
     "components": {
@@ -29,7 +37,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "light_tube",
-          "render_method": "opaque"
+          "render_method": "blend"
         }
       },
       "minecraft:geometry": {
