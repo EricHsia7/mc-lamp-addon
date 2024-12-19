@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:light_tube"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["WWW", "IGI", "WWW"],
+    "key": {
+      "G": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "W": {
+        "item": "minecraft:white_stained_glass_pane"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "lamp:light_tube"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glowstone_dust"
+      }
+    ]
+  }
+}
