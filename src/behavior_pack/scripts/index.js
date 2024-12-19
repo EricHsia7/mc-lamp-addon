@@ -55,6 +55,7 @@ function updateBlockConnections(replacedBlock) {
     y: replacedBlockLocation.y,
     z: replacedBlockLocation.z
   });
+  const placedBlockType = placedBlock.typeId;
 
   for (const [direction, offset] of Object.entries(directions)) {
     const neighborLocation = {
@@ -65,7 +66,7 @@ function updateBlockConnections(replacedBlock) {
 
     const neighborBlock = dimension.getBlock(neighborLocation);
 
-    if (neighborBlock && neighborBlock.typeId === replacedBlockType) {
+    if (neighborBlock && neighborBlock.typeId === placedBlockType) {
       placedBlock.setPermutation(placedBlock.permutation.withState(`lamp:connection_${direction}`, true));
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
     } else {
