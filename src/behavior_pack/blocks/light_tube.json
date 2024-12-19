@@ -18,6 +18,7 @@
       }
     },
     "components": {
+      "tag:lamp:connectable": {},
       "minecraft:display_name": "Light Tube",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 2
@@ -57,8 +58,7 @@
           "connection_south": false,
           "connection_west": false
         }
-      }
-    },
+      }    },
     "permutations": [
       {
         "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",

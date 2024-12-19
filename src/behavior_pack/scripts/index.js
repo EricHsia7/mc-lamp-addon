@@ -1,4 +1,4 @@
-import { world, system, BlockPermutation } from '@minecraft/server';
+import { world, system } from '@minecraft/server';
 
 const directions = {
   north: { x: 0, y: 0, z: -1 },
@@ -8,15 +8,6 @@ const directions = {
   up: { x: 0, y: 1, z: 0 },
   down: { x: 0, y: -1, z: 0 }
 };
-
-function mainTick() {
-  if (system.currentTick === 400) {
-    world.sendMessage('All systems GO!');
-  }
-  system.run(mainTick);
-}
-
-system.run(mainTick);
 
 // Function to get inverse direction
 function getInverseDirection(direction) {
@@ -57,7 +48,6 @@ function updatePlacedBlockConnections(event) {
     z: replacedBlockLocation.z
   });
   const placedBlockType = placedBlock.typeId;
-
   for (const [direction, offset] of Object.entries(directions)) {
     const neighborLocation = {
       x: replacedBlockLocation.x + offset.x,
@@ -67,7 +57,8 @@ function updatePlacedBlockConnections(event) {
 
     const neighborBlock = dimension.getBlock(neighborLocation);
     const neighborBlockType = neighborBlock.typeId;
-    if (neighborBlock && neighborBlockType === placedBlockType) {
+    const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
+    if (neighborBlock && neighborBlockType === placedBlockType && neighborBlockConnectable) {
       placedBlock.setPermutation(placedBlock.permutation.withState(`lamp:connection_${direction}`, true));
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
     } else {
@@ -92,7 +83,8 @@ function updateBrokenBlockConnections(event) {
 
     const neighborBlock = dimension.getBlock(neighborLocation);
     const neighborBlockType = neighborBlock.typeId;
-    if (neighborBlock && neighborBlockType === brokenBlockType) {
+    const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
+    if (neighborBlock && neighborBlockType === brokenBlockType && neighborBlockConnectable) {
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, false));
     }
   }
