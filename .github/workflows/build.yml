@@ -13,7 +13,7 @@ jobs:
     steps:
       # Step 1: Check out the repository
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Step 2: Create .mcpack files
       - name: Create behavior_pack.mcpack
@@ -38,7 +38,7 @@ jobs:
 
       # Step 4: Upload the .mcaddon file as an artifact
       - name: Upload mcaddon artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: minecraft-addon
           path: build/addon.mcaddon
