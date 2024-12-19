@@ -38,7 +38,7 @@ function getInverseDirection(direction) {
 
 // Function to check blocks and set connection states
 function updatePlacedBlockConnections(event) {
-  const replacedBlock = event.block; // this is the block replaced by the placed block (air is also a type of blocks)
+  const replacedBlock = event.block; // This is the block replaced by the placed block (air is also a type of blocks)
   const replacedBlockType = replacedBlock.typeId;
   const replacedBlockLocation = replacedBlock.location;
   const dimension = replacedBlock.dimension;
@@ -48,6 +48,8 @@ function updatePlacedBlockConnections(event) {
     z: replacedBlockLocation.z
   });
   const placedBlockType = placedBlock.typeId;
+  const placedBlockConnectable = placedBlock.hasTag('lamp:connectable');
+
   for (const [direction, offset] of Object.entries(directions)) {
     const neighborLocation = {
       x: replacedBlockLocation.x + offset.x,
@@ -58,11 +60,14 @@ function updatePlacedBlockConnections(event) {
     const neighborBlock = dimension.getBlock(neighborLocation);
     const neighborBlockType = neighborBlock.typeId;
     const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
+    event.player.sendMessage(`${neighborBlockConnectable}`);
     if (neighborBlock && neighborBlockType === placedBlockType && neighborBlockConnectable) {
       placedBlock.setPermutation(placedBlock.permutation.withState(`lamp:connection_${direction}`, true));
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
     } else {
-      placedBlock.setPermutation(placedBlock.permutation.withState(`lamp:connection_${direction}`, false));
+      if (placedBlockConnectable) {
+        placedBlock.setPermutation(placedBlock.permutation.withState(`lamp:connection_${direction}`, false));
+      }
     }
   }
 }
