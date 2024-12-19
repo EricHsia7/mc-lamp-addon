@@ -60,7 +60,7 @@ function updatePlacedBlockConnections(event) {
     const neighborBlock = dimension.getBlock(neighborLocation);
     const neighborBlockType = neighborBlock.typeId;
     const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
-    event.player.sendMessage(`${neighborBlockConnectable}`);
+
     if (neighborBlock && neighborBlockType === placedBlockType && neighborBlockConnectable) {
       placedBlock.setPermutation(placedBlock.permutation.withState(`lamp:connection_${direction}`, true));
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
