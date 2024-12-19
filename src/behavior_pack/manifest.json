@@ -14,6 +14,18 @@
       "uuid": "3798e46d-26ba-4aad-8932-45593bbabcbc",
       "version": [1, 0, 0]
     },
-    { "type": "script", "language": "javascript", "uuid": "43b351a1-7dec-4c22-9577-4b3f54202e28", "entry": "scripts/index.js", "version": [1, 0, 0] }
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "43b351a1-7dec-4c22-9577-4b3f54202e28",
+      "entry": "scripts/index.js",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.16.0"
+    }
   ]
 }
