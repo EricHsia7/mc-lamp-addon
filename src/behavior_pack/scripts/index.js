@@ -37,7 +37,7 @@ function getInverseDirection(direction) {
 }
 
 // Function to check blocks and set connection states
-function updateBlockConnections(block) {
+function updateBlockConnections(replacedBlock) {
   const directions = {
     north: { x: 0, y: 0, z: -1 },
     east: { x: 1, y: 0, z: 0 },
@@ -47,24 +47,29 @@ function updateBlockConnections(block) {
     down: { x: 0, y: -1, z: 0 }
   };
 
-  const blockType = block.typeId;
-  const blockLocation = block.location;
-  const dimension = block.dimension;
+  const replacedBlockType = replacedBlock.typeId;
+  const replacedBlockLocation = replacedBlock.location;
+  const dimension = replacedBlock.dimension;
+  const placedBlock = dimension.getBlock({
+    x: replacedBlockLocation.x,
+    y: replacedBlockLocation.y,
+    z: replacedBlockLocation.z
+  });
 
   for (const [direction, offset] of Object.entries(directions)) {
     const neighborLocation = {
-      x: blockLocation.x + offset.x,
-      y: blockLocation.y + offset.y,
-      z: blockLocation.z + offset.z
+      x: replacedBlockLocation.x + offset.x,
+      y: replacedBlockLocation.y + offset.y,
+      z: replacedBlockLocation.z + offset.z
     };
 
     const neighborBlock = dimension.getBlock(neighborLocation);
 
-    if (neighborBlock && neighborBlock.typeId === blockType) {
-      block.setPermutation(block.permutation.withState(`lamp:connection_${direction}`, true));
+    if (neighborBlock && neighborBlock.typeId === replacedBlockType) {
+      placedBlock.setPermutation(placedBlock.permutation.withState(`lamp:connection_${direction}`, true));
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
     } else {
-      block.setPermutation(block.permutation.withState(`lamp:connection_${direction}`, false));
+      placedBlock.setPermutation(placedBlock.permutation.withState(`lamp:connection_${direction}`, false));
       neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, false));
     }
   }
@@ -73,8 +78,6 @@ function updateBlockConnections(block) {
 // Event listener for block placement
 world.afterEvents.playerPlaceBlock.subscribe((event) => {
   const replacedBlock = event.block; // this is the block replaced by the placed block
-  const player = event.player;
-  const selectedSlotIndex = player.sendMessage(`test ${player.selectedSlotIndex}`);
   updateBlockConnections(replacedBlock);
 });
 
