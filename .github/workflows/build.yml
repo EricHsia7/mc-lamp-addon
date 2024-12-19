@@ -1,0 +1,44 @@
+name: Build Minecraft Addon
+
+on:
+  push:
+    branches:
+      - main-a
+  workflow_dispatch:
+
+jobs:
+  build-addon:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Create .mcpack files
+      - name: Create behavior_pack.mcpack
+        run: |
+          mkdir -p build
+          cd src/behavior_pack
+          zip -r "../../build/behavior_pack.mcpack" ./*
+      
+      - name: Create resource_pack.mcpack
+        run: |
+          cd src/resource_pack
+          zip -r "../../build/resource_pack.mcpack" ./*
+
+      # Step 3: Create .mcaddon file
+      - name: Create mcaddon file
+        run: |
+          cd build
+          mkdir addon
+          mv behavior_pack.mcpack addon/
+          mv resource_pack.mcpack addon/
+          zip -r addon.mcaddon addon
+
+      # Step 4: Upload the .mcaddon file as an artifact
+      - name: Upload mcaddon artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: minecraft-addon
+          path: build/addon.mcaddon
