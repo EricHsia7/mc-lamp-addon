@@ -71,13 +71,15 @@ function updateBlockConnections(block) {
 }
 
 // Event listener for block placement
-world.afterEvents.blockPlace.subscribe((event) => {
-  const placedBlock = event.block;
-  updateBlockConnections(placedBlock);
+world.afterEvents.playerPlaceBlock.subscribe((event) => {
+  const replacedBlock = event.block; // this is the block replaced by the placed block
+  const player = event.player;
+  const selectedSlotIndex = player.sendMessage(`test ${player.selectedSlotIndex}`);
+  updateBlockConnections(replacedBlock);
 });
 
 // Subscribe to block break event
-world.afterEvents.blockBreak.subscribe((event) => {
+world.afterEvents.playerBreakBlock.subscribe((event) => {
   const brokenBlock = event.block;
   updateBlockConnections(brokenBlock);
 });
