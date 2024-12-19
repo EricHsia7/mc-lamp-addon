@@ -34,7 +34,7 @@ jobs:
           mkdir addon
           mv behavior_pack.mcpack addon/
           mv resource_pack.mcpack addon/
-          zip -r addon.zip addon
+          zip -r mc-lamp-addon.zip addon
 
       # Step 4: Upload the .mcaddon file as an artifact
       - name: Upload mcaddon artifact

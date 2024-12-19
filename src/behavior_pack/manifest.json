@@ -1,8 +1,8 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Lamp Behavior Pack",
     "name": "Lamp Behavior Pack",
+    "description": "Lamp Behavior Pack (Learn more on github.com/EricHsia7/mc-lamp-addon)",
     "uuid": "2a33328b-a6d0-4bb4-a238-e562d50e5530",
     "version": [1, 0, 0],
     "min_engine_version": [1, 21, 40]

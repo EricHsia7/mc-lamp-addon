@@ -1,8 +1,8 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Lamp Resource Pack",
     "name": "Lamp Resource Pack",
+    "description": "Lamp Resource Pack (Learn more on github.com/EricHsia7/mc-lamp-addon)",
     "uuid": "18ba2ec8-f3b7-4c73-af0b-21c7a319a24a",
     "version": [1, 0, 0],
     "min_engine_version": [1, 21, 40]
