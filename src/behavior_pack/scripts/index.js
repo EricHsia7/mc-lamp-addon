@@ -1,4 +1,4 @@
-import { world, system } from '@minecraft/server';
+import { world } from '@minecraft/server';
 
 const directions = {
   north: { x: 0, y: 0, z: -1 },

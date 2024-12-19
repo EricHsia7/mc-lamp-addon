@@ -44,13 +44,8 @@
       "minecraft:geometry": {
         "identifier": "geometry.lamp.light_tube",
         "bone_visibility": {
-          "frame": true,
-          "face_up": true,
-          "face_down": true,
-          "face_north": true,
-          "face_south": true,
-          "face_west": true,
-          "face_east": true,
+          "core": true,
+
           "connection_up": false,
           "connection_down": false,
           "connection_north": false,
@@ -58,7 +53,8 @@
           "connection_south": false,
           "connection_west": false
         }
-      }    },
+      }
+    },
     "permutations": [
       {
         "condition": "q.block_state('lamp:connection_up') && q.block_state('lamp:connection_down') && q.block_state('lamp:connection_north') && q.block_state('lamp:connection_south') && q.block_state('lamp:connection_east') && q.block_state('lamp:connection_west')",
@@ -66,13 +62,8 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": false,
-              "face_south": false,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
+
               "connection_up": true,
               "connection_down": true,
               "connection_north": true,
@@ -89,13 +80,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": false,
-              "face_south": false,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": true,
@@ -112,13 +97,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": false,
-              "face_south": false,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": true,
@@ -135,13 +114,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": false,
-              "face_south": false,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": true,
@@ -158,13 +131,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": false,
-              "face_south": true,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": true,
@@ -181,13 +148,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": false,
-              "face_south": true,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": true,
@@ -204,13 +165,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": false,
-              "face_south": true,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": true,
@@ -227,13 +182,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": false,
-              "face_south": true,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": true,
@@ -250,13 +199,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": true,
-              "face_south": false,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": false,
@@ -273,13 +216,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": true,
-              "face_south": false,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": false,
@@ -296,13 +233,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": true,
-              "face_south": false,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": false,
@@ -319,13 +250,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": true,
-              "face_south": false,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": false,
@@ -342,13 +267,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": true,
-              "face_south": true,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": false,
@@ -365,13 +284,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": true,
-              "face_south": true,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": false,
@@ -388,13 +301,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": true,
-              "face_south": true,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": false,
@@ -411,13 +318,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": false,
-              "face_north": true,
-              "face_south": true,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": true,
               "connection_north": false,
@@ -434,13 +335,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": false,
-              "face_south": false,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": true,
@@ -457,13 +352,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": false,
-              "face_south": false,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": true,
@@ -480,13 +369,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": false,
-              "face_south": false,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": true,
@@ -503,13 +386,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": false,
-              "face_south": false,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": true,
@@ -526,13 +403,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": false,
-              "face_south": true,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": true,
@@ -549,13 +420,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": false,
-              "face_south": true,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": true,
@@ -572,13 +437,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": false,
-              "face_south": true,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": true,
@@ -595,13 +454,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": false,
-              "face_south": true,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": true,
@@ -618,13 +471,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": true,
-              "face_south": false,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": false,
@@ -641,13 +488,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": true,
-              "face_south": false,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": false,
@@ -664,13 +505,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": true,
-              "face_south": false,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": false,
@@ -687,13 +522,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": true,
-              "face_south": false,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": false,
@@ -710,13 +539,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": true,
-              "face_south": true,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": false,
@@ -733,13 +556,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": true,
-              "face_south": true,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": false,
@@ -756,13 +573,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": true,
-              "face_south": true,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": false,
@@ -779,13 +590,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": false,
-              "face_down": true,
-              "face_north": true,
-              "face_south": true,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": true,
               "connection_down": false,
               "connection_north": false,
@@ -802,13 +607,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": false,
-              "face_south": false,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": true,
@@ -825,13 +624,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": false,
-              "face_south": false,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": true,
@@ -848,13 +641,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": false,
-              "face_south": false,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": true,
@@ -871,13 +658,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": false,
-              "face_south": false,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": true,
@@ -894,13 +675,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": false,
-              "face_south": true,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": true,
@@ -917,13 +692,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": false,
-              "face_south": true,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": true,
@@ -940,13 +709,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": false,
-              "face_south": true,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": true,
@@ -963,13 +726,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": false,
-              "face_south": true,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": true,
@@ -986,13 +743,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": true,
-              "face_south": false,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": false,
@@ -1009,13 +760,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": true,
-              "face_south": false,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": false,
@@ -1032,13 +777,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": true,
-              "face_south": false,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": false,
@@ -1055,13 +794,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": true,
-              "face_south": false,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": false,
@@ -1078,13 +811,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": true,
-              "face_south": true,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": false,
@@ -1101,13 +828,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": true,
-              "face_south": true,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": false,
@@ -1124,13 +845,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": true,
-              "face_south": true,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": false,
@@ -1147,13 +862,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": false,
-              "face_north": true,
-              "face_south": true,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": true,
               "connection_north": false,
@@ -1170,13 +879,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": false,
-              "face_south": false,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": true,
@@ -1193,13 +896,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": false,
-              "face_south": false,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": true,
@@ -1216,13 +913,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": false,
-              "face_south": false,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": true,
@@ -1239,13 +930,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": false,
-              "face_south": false,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": true,
@@ -1262,13 +947,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": false,
-              "face_south": true,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": true,
@@ -1285,13 +964,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": false,
-              "face_south": true,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": true,
@@ -1308,13 +981,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": false,
-              "face_south": true,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": true,
@@ -1331,13 +998,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": false,
-              "face_south": true,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": true,
@@ -1354,13 +1015,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": true,
-              "face_south": false,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": false,
@@ -1377,13 +1032,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": true,
-              "face_south": false,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": false,
@@ -1400,13 +1049,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": true,
-              "face_south": false,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": false,
@@ -1423,13 +1066,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": true,
-              "face_south": false,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": false,
@@ -1446,13 +1083,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": true,
-              "face_south": true,
-              "face_east": false,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": false,
@@ -1469,13 +1100,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": true,
-              "face_south": true,
-              "face_east": false,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": false,
@@ -1492,13 +1117,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": true,
-              "face_south": true,
-              "face_east": true,
-              "face_west": false,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": false,
@@ -1515,13 +1134,7 @@
           "minecraft:geometry": {
             "identifier": "geometry.lamp.light_tube",
             "bone_visibility": {
-              "frame": true,
-              "face_up": true,
-              "face_down": true,
-              "face_north": true,
-              "face_south": true,
-              "face_east": true,
-              "face_west": true,
+              "core": true,
               "connection_up": false,
               "connection_down": false,
               "connection_north": false,
