@@ -45,6 +45,40 @@
           "mask": true
         }
       }
-    }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('lamp:is_light_on')",
+        "components": {
+          "minecraft:light_emission": 15,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.desk_lamp",
+            "bone_visibility": {
+              "bottom": true,
+              "supporter": true,
+              "light_off": false,
+              "light_on": true,
+              "mask": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('lamp:is_light_on')",
+        "components": {
+          "minecraft:light_emission": 0,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.desk_lamp",
+            "bone_visibility": {
+              "bottom": true,
+              "supporter": true,
+              "light_off": true,
+              "light_on": false,
+              "mask": true
+            }
+          }
+        }
+      }
+    ]
   }
 }
