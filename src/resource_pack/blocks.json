@@ -8,5 +8,8 @@
   },
   "lamp:light_tube": {
     "sound": "glass"
+  },
+  "lamp:neon_lantern": {
+    "sound": "glass"
   }
 }
