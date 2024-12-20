@@ -16,6 +16,9 @@
     },
     "neon_lantern": {
       "textures": "textures/blocks/neon_lantern.png"
+    },
+    "desk_lamp": {
+      "textures": "textures/blocks/desk_lamp.png"
     }
   }
 }

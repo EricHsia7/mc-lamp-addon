@@ -11,5 +11,8 @@
   },
   "lamp:neon_lantern": {
     "sound": "glass"
+  },
+  "lamp:desk_lamp": {
+    "sound": "stone"
   }
 }
