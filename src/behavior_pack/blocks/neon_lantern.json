@@ -1,0 +1,44 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lamp:neon_lantern",
+      "is_experimental": false,
+      "register_to_creative_menu": true,
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Neon Lantern",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:friction": 0.4,
+      "minecraft:flammable": false,
+      "minecraft:map_color": "#051A23",
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 15,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": false,
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "neon_lantern",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.lamp.neon_lantern",
+        "bone_visibility": {
+          "frame": true,
+          "light": true
+        }
+      }
+    }
+  }
+}
