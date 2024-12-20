@@ -1,11 +1,3 @@
-The `terrain_texture.json` file lists the following lamps:
-
-- Incandescent Light Bulb
-- Fluorescent Lamp
-- Light Tube
-
-I will now integrate this information into a more detailed README for documenting the lamps.
-
 # Lamp
 
 *Lamp*, an addon for Minecraft Bedrock/Pocket Edition, introduces various types of lamps into your world.
@@ -33,5 +25,3 @@ The fluorescent lamp emits a bright, white light that is perfect for illuminatin
 ### Light Tube
 
 The light tube offers a sleek and efficient lighting solution that can be used to create continuous lines of light, ideal for highlighting pathways or architectural features.
-
-These lamps can be used to enhance the aesthetics and functionality of your Minecraft world, providing various lighting options to suit different needs and styles.
