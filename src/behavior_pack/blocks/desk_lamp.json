@@ -14,7 +14,7 @@
     },
     "components": {
       "tag:lamp:bistable": {},
-      "minecraft:custom_component": ["lamp:bistable_component"],
+      "minecraft:custom_components": ["lamp:bistable_component"],
       "minecraft:display_name": "Desk Lamp",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 2
