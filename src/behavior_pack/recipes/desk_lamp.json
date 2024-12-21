@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:desk_lamp"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SPS", "SGS", "###"],
+    "key": {
+      "G": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "P": {
+        "item": "minecraft:paper"
+      },
+      "#": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "lamp:desk_lamp"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glowstone_dust"
+      }
+    ]
+  }
+}
