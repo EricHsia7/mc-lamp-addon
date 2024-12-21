@@ -446,6 +446,198 @@
             }
           }
         }
+      },
+      {
+        "condition": "q.block_state('lamp:adjustable_lightness') == 15 && q.block_state('minecraft:facing_direction') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:light_emission": 15,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.candle_lamp",
+            "bone_visibility": {
+              "glass": true,
+              "top": true,
+              "light_0": false,
+              "light_5": false,
+              "light_10": false,
+              "light_15": true,
+              "bottom_0": false,
+              "bottom_5": false,
+              "bottom_10": false,
+              "bottom_15": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:adjustable_lightness') == 10 && q.block_state('minecraft:facing_direction') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:light_emission": 10,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.candle_lamp",
+            "bone_visibility": {
+              "glass": true,
+              "top": true,
+              "light_0": false,
+              "light_5": false,
+              "light_10": true,
+              "light_15": false,
+              "bottom_0": false,
+              "bottom_5": false,
+              "bottom_10": true,
+              "bottom_15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:adjustable_lightness') == 5 && q.block_state('minecraft:facing_direction') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:light_emission": 5,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.candle_lamp",
+            "bone_visibility": {
+              "glass": true,
+              "top": true,
+              "light_0": false,
+              "light_5": true,
+              "light_10": false,
+              "light_15": false,
+              "bottom_0": false,
+              "bottom_5": true,
+              "bottom_10": false,
+              "bottom_15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:adjustable_lightness') == 0 && q.block_state('minecraft:facing_direction') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:light_emission": 0,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.candle_lamp",
+            "bone_visibility": {
+              "glass": true,
+              "top": true,
+              "light_0": true,
+              "light_5": false,
+              "light_10": false,
+              "light_15": false,
+              "bottom_0": true,
+              "bottom_5": false,
+              "bottom_10": false,
+              "bottom_15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:adjustable_lightness') == 15 && q.block_state('minecraft:facing_direction') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:light_emission": 15,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.candle_lamp",
+            "bone_visibility": {
+              "glass": true,
+              "top": true,
+              "light_0": false,
+              "light_5": false,
+              "light_10": false,
+              "light_15": true,
+              "bottom_0": false,
+              "bottom_5": false,
+              "bottom_10": false,
+              "bottom_15": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:adjustable_lightness') == 10 && q.block_state('minecraft:facing_direction') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:light_emission": 10,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.candle_lamp",
+            "bone_visibility": {
+              "glass": true,
+              "top": true,
+              "light_0": false,
+              "light_5": false,
+              "light_10": true,
+              "light_15": false,
+              "bottom_0": false,
+              "bottom_5": false,
+              "bottom_10": true,
+              "bottom_15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:adjustable_lightness') == 5 && q.block_state('minecraft:facing_direction') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:light_emission": 5,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.candle_lamp",
+            "bone_visibility": {
+              "glass": true,
+              "top": true,
+              "light_0": false,
+              "light_5": true,
+              "light_10": false,
+              "light_15": false,
+              "bottom_0": false,
+              "bottom_5": true,
+              "bottom_10": false,
+              "bottom_15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('lamp:adjustable_lightness') == 0 && q.block_state('minecraft:facing_direction') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:light_emission": 0,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.candle_lamp",
+            "bone_visibility": {
+              "glass": true,
+              "top": true,
+              "light_0": true,
+              "light_5": false,
+              "light_10": false,
+              "light_15": false,
+              "bottom_0": true,
+              "bottom_5": false,
+              "bottom_10": false,
+              "bottom_15": false
+            }
+          }
+        }
       }
     ]
   }
