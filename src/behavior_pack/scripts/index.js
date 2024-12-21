@@ -120,6 +120,26 @@ const LampBistableComponent = {
   }
 };
 
+const LampAdjustableLightnessComponent = {
+  onPlayerInteract({ block, dimension }) {
+    const isAdjustable = block.hasTag('lamp:adjustable_lightness');
+    if (isAdjustable) {
+      const lightness = block.permutation.getState('lamp:adjustable_lightness');
+      let newLightness = lightness + 5;
+      if (newLightness > 15) {
+        newLightness = 0;
+      }
+      const sound = newLightness === 0 ? 'close.wooden_trapdoor' : 'open.wooden_trapdoor';
+      block.setPermutation(block.permutation.withState('lamp:adjustable_lightness', newLightness));
+      dimension.playSound(sound, block.center(), {
+        pitch: 0.9,
+        volume: 0.9
+      });
+    }
+  }
+};
+
 world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
   blockComponentRegistry.registerCustomComponent('lamp:bistable_component', LampBistableComponent);
+  blockComponentRegistry.registerCustomComponent('lamp:adjustable_lightness_component', LampAdjustableLightnessComponent);
 });
