@@ -105,27 +105,21 @@ world.afterEvents.playerBreakBlock.subscribe((event) => {
   updateBrokenBlockConnections(event);
 });
 
-function updateBistableBlock(event) {
-  event.damagingEntity.sendMessage('test');
-  const hitBlock = event.hitBlock;
-  const hitBlockLocation = {
-    x: hitBlock.x,
-    y: hitBlock.y,
-    z: hitBlock.z
-  };
-  const block = dimension.getBlock(hitBlockLocation);
-  const blockBistable = block.hasTag('lamp:bistable');
-  if (blockBistable) {
-    const bistableStatus = block.hitBlock.getState('lamp:bistable_status');
-    if (bistableStatus) {
-      block.setPermutation(block.permutation.withState('lamp:bistable_status', false));
-    } else {
-      block.setPermutation(block.permutation.withState('lamp:bistable_status', true));
+const LampBistableComponent = {
+  onPlayerInteract({ block, dimension }) {
+    const isBistable = block.hasTag('lamp:bistable');
+    if (isBistable) {
+      const isTrue = block.permutation.getState('lamp:bistable_status');
+      const sound = isTrue ? 'close.wooden_trapdoor' : 'open.wooden_trapdoor';
+      block.setPermutation(block.permutation.withState('lamp:bistable_status', !isTrue));
+      dimension.playSound(sound, block.center(), {
+        pitch: 0.9,
+        volume: 0.9
+      });
     }
   }
-}
+};
 
-// Event listener for interaction with block
-world.afterEvents.entityHitBlock.subscribe((event) => {
-  updateBistableBlock(event);
+world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
+  blockComponentRegistry.registerCustomComponent('lamp:bistable_component', LampBistableComponent);
 });
