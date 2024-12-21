@@ -125,9 +125,23 @@ const LampAdjustableLightnessComponent = {
     const isAdjustable = block.hasTag('lamp:adjustable_lightness');
     if (isAdjustable) {
       const lightness = block.permutation.getState('lamp:adjustable_lightness');
-      let newLightness = lightness + 5;
-      if (newLightness > 15) {
-        newLightness = 0;
+      let newLightness = 0;
+      switch (lightness) {
+        case 0:
+          newLightness = 5;
+          break;
+        case 5:
+          newLightness = 10;
+          break;
+        case 10:
+          newLightness = 15;
+          break;
+        case 15:
+          newLightness = 0;
+          break;
+        default:
+          newLightness = 0;
+          break;
       }
       const sound = newLightness === 0 ? 'close.wooden_trapdoor' : 'open.wooden_trapdoor';
       block.setPermutation(block.permutation.withState('lamp:adjustable_lightness', newLightness));

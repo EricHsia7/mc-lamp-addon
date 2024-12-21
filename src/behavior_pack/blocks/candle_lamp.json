@@ -64,7 +64,7 @@
     },
     "permutations": [
       {
-        "condition": "q.block_state('lamp:adjustable_lightness') == 15 && q.block_state('minecraft:facing_direction') == 'north'",
+        "condition": "q.block_state('lamp:adjustable_lightness') == 15",
         "components": {
           "minecraft:transformation": {
             "rotation": [0, 0, 0]
@@ -88,7 +88,7 @@
         }
       },
       {
-        "condition": "q.block_state('lamp:adjustable_lightness') == 10 && q.block_state('minecraft:facing_direction') == 'north'",
+        "condition": "q.block_state('lamp:adjustable_lightness') == 10",
         "components": {
           "minecraft:transformation": {
             "rotation": [0, 0, 0]
@@ -112,7 +112,7 @@
         }
       },
       {
-        "condition": "q.block_state('lamp:adjustable_lightness') == 5 && q.block_state('minecraft:facing_direction') == 'north'",
+        "condition": "q.block_state('lamp:adjustable_lightness') == 5",
         "components": {
           "minecraft:transformation": {
             "rotation": [0, 0, 0]
@@ -136,7 +136,7 @@
         }
       },
       {
-        "condition": "q.block_state('lamp:adjustable_lightness') == 0 && q.block_state('minecraft:facing_direction') == 'north'",
+        "condition": "q.block_state('lamp:adjustable_lightness') == 0",
         "components": {
           "minecraft:transformation": {
             "rotation": [0, 0, 0]
