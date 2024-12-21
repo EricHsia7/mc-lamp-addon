@@ -50,6 +50,10 @@
       "minecraft:collision_box": {
         "origin": [-4.25, 0, -4.25],
         "size": [8.5, 10.5, 8.5]
+      },
+      "minecraft:selection_box": {
+        "origin": [-4.25, 0, -4.25],
+        "size": [8.5, 10.5, 8.5]
       }
     },
     "permutations": [
