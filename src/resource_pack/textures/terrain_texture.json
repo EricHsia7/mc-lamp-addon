@@ -19,6 +19,9 @@
     },
     "desk_lamp": {
       "textures": "textures/blocks/desk_lamp.png"
+    },
+    "candle_lamp": {
+      "textures": "textures/blocks/candle_lamp.png"
     }
   }
 }

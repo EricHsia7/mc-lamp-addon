@@ -14,5 +14,8 @@
   },
   "lamp:desk_lamp": {
     "sound": "stone"
+  },
+  "lamp:candle_lamp": {
+    "sound": "stone"
   }
 }
