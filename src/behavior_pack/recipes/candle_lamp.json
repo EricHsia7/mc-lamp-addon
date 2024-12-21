@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:candle_lamp"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["###", "GTG", "###"],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "T": {
+        "item": "minecraft:torch"
+      },
+      "#": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "lamp:candle_lamp"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:torch"
+      }
+    ]
+  }
+}
