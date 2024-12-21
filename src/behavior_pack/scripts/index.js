@@ -100,7 +100,25 @@ world.afterEvents.playerPlaceBlock.subscribe((event) => {
   updatePlacedBlockConnections(event);
 });
 
-// Subscribe to block break event
+// Event listener for block break
 world.afterEvents.playerBreakBlock.subscribe((event) => {
   updateBrokenBlockConnections(event);
+});
+
+function updateBistableBlock(event) {
+  const interactedBlock = event.block;
+  const interactedBlockBistable = interactedBlock.hasTag('lamp:bistable');
+  if (interactedBlockBistable) {
+    const bistableStatus = interactedBlock.permutation.getState('lamp:bistable_status');
+    if (bistableStatus) {
+      interactedBlock.setPermutation(interactedBlock.permutation.withState('lamp:bistable_status', false));
+    } else {
+      interactedBlock.setPermutation(interactedBlock.permutation.withState('lamp:bistable_status', true));
+    }
+  }
+}
+
+// Event listener for interaction with block
+world.afterEvents.playerInteractWithBlock.subscribe((event) => {
+  updateBistableBlock(event);
 });

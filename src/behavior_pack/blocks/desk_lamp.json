@@ -9,10 +9,11 @@
         "category": "items"
       },
       "states": {
-        "lamp:is_light_on": [false, true]
+        "lamp:bistable_status": [false, true]
       }
     },
     "components": {
+      "tag:lamp:bistable": {},
       "minecraft:display_name": "Desk Lamp",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 2
@@ -48,7 +49,7 @@
     },
     "permutations": [
       {
-        "condition": "q.block_state('lamp:is_light_on')",
+        "condition": "q.block_state('lamp:bistable_status')",
         "components": {
           "minecraft:light_emission": 15,
           "minecraft:geometry": {
@@ -64,7 +65,7 @@
         }
       },
       {
-        "condition": "!q.block_state('lamp:is_light_on')",
+        "condition": "!q.block_state('lamp:bistable_status')",
         "components": {
           "minecraft:light_emission": 0,
           "minecraft:geometry": {
