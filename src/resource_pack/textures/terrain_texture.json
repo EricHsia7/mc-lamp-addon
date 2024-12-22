@@ -22,6 +22,9 @@
     },
     "candle_lamp": {
       "textures": "textures/blocks/candle_lamp.png"
+    },
+    "toast_lamp": {
+      "textures": "textures/blocks/toast_lamp.png"
     }
   }
 }

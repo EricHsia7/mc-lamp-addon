@@ -17,5 +17,8 @@
   },
   "lamp:candle_lamp": {
     "sound": "stone"
+  },
+  "lamp:toast_lamp": {
+    "sound": "stone"
   }
 }

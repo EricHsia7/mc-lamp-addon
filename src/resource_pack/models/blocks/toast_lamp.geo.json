@@ -1,0 +1,37 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.lamp.toast_lamp",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "toast",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-2.5, 0, -6],
+              "size": [3, 10, 10],
+              "pivot": [-1, 0, 0],
+              "rotation": [0, -90, 0],
+              "uv": {
+                "north": { "uv": [80, 0], "uv_size": [12, 40] },
+                "east": { "uv": [0, 0], "uv_size": [40, 40] },
+                "south": { "uv": [80, 0], "uv_size": [12, 40] },
+                "west": { "uv": [0, 0], "uv_size": [40, 40] },
+                "up": { "uv": [92, 40], "uv_size": [-12, -40] },
+                "down": { "uv": [92, 40], "uv_size": [-12, -40] }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

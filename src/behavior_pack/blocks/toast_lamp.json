@@ -1,0 +1,98 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lamp:toast_lamp",
+      "is_experimental": false,
+      "register_to_creative_menu": true,
+      "menu_category": {
+        "category": "items"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:facing_direction"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Toast Lamp",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:friction": 0.4,
+      "minecraft:flammable": false,
+      "minecraft:map_color": "#D17A2A",
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 15,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": false,
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "toast_lamp",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.lamp.toast_lamp",
+        "bone_visibility": {
+          "toast": true
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:facing_direction') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [90, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [-90, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [90, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [90, -90, 0]
+          }
+        }
+      }
+    ]
+  }
+}
