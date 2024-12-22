@@ -42,30 +42,30 @@
         "bone_visibility": {
           "toast": true
         }
+      },
+      "minecraft:collision_box": {
+        "origin": [-5, 0, -1.5],
+        "size": [10, 10, 3]
+      },
+      "minecraft:selection_box": {
+        "origin": [-5, 0, -1.5],
+        "size": [10, 10, 3]
       }
     },
     "permutations": [
-      {
-        "condition": "q.block_state('minecraft:facing_direction') == 'down'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 0, 0]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('minecraft:facing_direction') == 'up'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 0, 0]
-          }
-        }
-      },
       {
         "condition": "q.block_state('minecraft:facing_direction') == 'north'",
         "components": {
           "minecraft:transformation": {
             "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
           }
         }
       },
@@ -86,10 +86,18 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:facing_direction') == 'east'",
+        "condition": "q.block_state('minecraft:facing_direction') == 'up'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [0, 90, 0]
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
           }
         }
       }
