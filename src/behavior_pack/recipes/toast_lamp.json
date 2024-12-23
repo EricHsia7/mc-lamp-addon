@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:toast_lamp"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["BBB", "BTB", "BBB"],
+    "key": {
+      "B": {
+        "item": "minecraft:bread"
+      },
+      "T": {
+        "item": "minecraft:torch"
+      }
+    },
+    "result": {
+      "item": "lamp:toast_lamp"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bread"
+      }
+    ]
+  }
+}
