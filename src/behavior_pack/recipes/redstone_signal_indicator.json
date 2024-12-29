@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:redstone_signal_indicator"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SGS", "GLG", "SGS"],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "L": {
+        "item": "minecraft:redstone_lamp"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "lamp:redstone_signal_indicator"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:redstone_lamp"
+      }
+    ]
+  }
+}
