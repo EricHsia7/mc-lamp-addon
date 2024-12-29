@@ -4,7 +4,7 @@ Lamp, an addon for Minecraft Bedrock/Pocket Edition, introduces various types of
 
 ## Install
 
-To install this addon, you need to follow these steps:
+### General Steps
 
 1. Download the latest `mc-lamp-addon.zip` on the release page.
 2. Find the downloaded file.
@@ -24,7 +24,7 @@ To install this addon, you need to follow these steps:
 5. For the current version (Minecraft v1.21.x), you need to enable casual creator options to ensure the functionality.
 6. Enable both the behavior and resource pack for a specific world.
 
-### Troubleshooting
+### Troubleshooting Steps
 
 #### File Manager Compatibility
 
