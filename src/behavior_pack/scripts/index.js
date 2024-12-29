@@ -69,6 +69,7 @@ function getRedstoneSignal(block) {
       signal = 0;
       break;
   }
+  return signal;
 }
 
 // Function to check blocks and set connection states
