@@ -46,32 +46,6 @@ function isRedstoneRelated(block) {
   }
 }
 
-function getRedstoneSignal(block) {
-  const blockTypeId = block.typeId;
-  let signal = 0;
-  switch (blockTypeId) {
-    case 'minecraft:redstone_wire':
-      signal = parseInt(block.permutation.getState('minecraft:redstone_signal'));
-      break;
-    case 'minecraft:powered_repeater':
-      signal = 15;
-      break;
-    case 'minecraft:unpowered_repeater':
-      signal = 0;
-      break;
-    case 'minecraft:powered_comparator':
-      signal = 15;
-      break;
-    case 'minecraft:unpowered_comparator':
-      signal = 0;
-      break;
-    default:
-      signal = 0;
-      break;
-  }
-  return signal;
-}
-
 // Function to check blocks and set connection states
 function updatePlacedBlockConnections(event) {
   const replacedBlock = event.block; // This is the block replaced by the placed block (air is also a type of blocks)
@@ -194,7 +168,7 @@ const LampRedstoneResponsiveComponent = {
     const isRedstoneResponsive = block.hasTag('lamp:redstone_responsive');
     if (isRedstoneResponsive) {
       const blockLocation = block.location;
-      let receivedRedstoneSignals = [0];
+      let receivedRedstonePowers = [0];
       for (const [direction, offset] of Object.entries(directions)) {
         const neighborLocation = {
           x: blockLocation.x + offset.x,
@@ -206,12 +180,13 @@ const LampRedstoneResponsiveComponent = {
         const neighborBlockType = neighborBlock.typeId;
         const neighborBlockRedstoneRelated = isRedstoneRelated(neighborBlock);
         if (neighborBlock && neighborBlockRedstoneRelated) {
-          const neighborBlockRedstoneSignal = getRedstoneSignal(neighborBlock);
-          receivedRedstoneSignals.push(neighborBlockRedstoneSignal);
+          const neighborBlockRedstonePower = neighborBlock.getRedstonePower();
+          receivedRedstonePowers.push(neighborBlockRedstonePower);
+          console.log(neighborBlockRedstonePower);
         }
       }
-      const determiningRestoneSignal = Math.max(...receivedRedstoneSignals);
-      block.setPermutation(block.permutation.withState('lamp:redstone_signal', determiningRestoneSignal));
+      const determiningRestonePower = Math.max(...receivedRedstonePowers);
+      block.setPermutation(block.permutation.withState('lamp:redstone_signal', determiningRestonePower));
     }
   }
 };
