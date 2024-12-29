@@ -7,10 +7,38 @@ Lamp, an addon for Minecraft Bedrock/Pocket Edition, introduces various types of
 To install this addon, you need to follow these steps:
 
 1. Download the latest `mc-lamp-addon.zip` on the release page.
-2. Decompress the zip file, and import `behavior_pack.mcpack` and `resource_pack.mcpack` to Minecraft in order.
-    - On iOS and iPadOS, you can click the mcpack files directly, and they will be automatically opened and imported into Minecraft.
-3. For the current version (Minecraft v1.21.x), you need to enable casual creator options to ensure the functionality.
-4. Enable both the behavior and resource pack for a specific world.
+2. Find the downloaded file.
+   - On iOS and iPadOS, open `Files` (a built-in application by Apple) and the file is usually in your preferred `Downloads` folder.
+   - On Android devices, open your device's file manager app (e.g., `Files` or `My Files`) and navigate to the "Downloads" folder or the location where you saved the `.mcpack` file.
+3. Uncompress the zip file.
+    - On iOS and iPadOS, click the zip file directly and it will create a new folder in which `behavior_pack.mcpack` and `resource_pack.mcpack` are enclosed.
+    - On Android devices, you can uncompress the files using tools provided by your file manager.
+4. Open the `.mcpack` File.
+   - On iOS and iPadOS, click the mcpack files, and they will be automatically opened and imported into Minecraft.
+   - On Android devices, you can:
+      - Tap on the `.mcpack` file.
+      - A prompt should appear, asking which app to use to open the file.
+      - Select "Minecraft" from the list of apps.
+      - Minecraft will launch automatically and begin importing the pack.
+      - Once the import is complete, a confirmation message will appear, indicating successful installation.
+5. For the current version (Minecraft v1.21.x), you need to enable casual creator options to ensure the functionality.
+6. Enable both the behavior and resource pack for a specific world.
+
+### Troubleshooting
+
+#### File Manager Compatibility
+
+If tapping the `.mcpack` file doesn't prompt Minecraft to open, consider using a different file manager app.
+
+#### Manual Installation
+
+If the above method doesn't work, you can manually move the `.mcpack` file to the appropriate Minecraft folder:
+
+- Use a file manager to navigate to the `.mcpack` file.
+- Rename the `.mcpack` file extension to `.zip`.
+- Extract the contents of the `.zip` file.
+- Move the extracted folder to the `games/com.mojang/resource_packs` or `games/com.mojang/behavior_packs` directory, depending on the type of pack.
+- Restart Minecraft and check if the pack appears in your settings.
 
 ## Lamps
 
