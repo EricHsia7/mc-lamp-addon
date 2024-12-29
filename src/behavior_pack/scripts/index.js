@@ -210,7 +210,7 @@ const LampRedstoneResponsiveComponent = {
         }
       }
       const determiningRestoneSignal = Math.max(...receivedRedstoneSignals);
-      block.setPermutation(placedBlock.permutation.withState('lamp:redstone_signal', determiningRestoneSignal));
+      block.setPermutation(block.permutation.withState('lamp:redstone_signal', determiningRestoneSignal));
     }
   }
 };
