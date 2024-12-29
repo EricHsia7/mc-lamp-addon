@@ -182,7 +182,6 @@ const LampRedstoneResponsiveComponent = {
         if (neighborBlock && neighborBlockRedstoneRelated) {
           const neighborBlockRedstonePower = neighborBlock.getRedstonePower();
           receivedRedstonePowers.push(neighborBlockRedstonePower);
-          console.log(neighborBlockRedstonePower);
         }
       }
       const determiningRestonePower = Math.max(...receivedRedstonePowers);
