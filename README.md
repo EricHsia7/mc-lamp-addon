@@ -44,6 +44,10 @@ If the above method doesn't work, you can manually move the `.mcpack` file to th
 
 ## Lamps
 
+### Caged Light Bulb
+
+Comprising a wooden cage with a light bulb inside, it illuminates surroundings with light at level 15.
+
 ### Candle Lamp
 
 Can emit 4 different levels of light (0, 5, 10, and 15), which is controlled by players' interaction (click).
