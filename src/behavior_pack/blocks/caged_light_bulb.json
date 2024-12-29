@@ -37,6 +37,14 @@
         "bone_visibility": {
           "bone": true
         }
+      },
+      "minecraft:collision_box": {
+        "origin": [-3, 3.5, -3],
+        "size": [6, 12.5, 6]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3, 3.5, -3],
+        "size": [6, 12.5, 6]
       }
     }
   }
