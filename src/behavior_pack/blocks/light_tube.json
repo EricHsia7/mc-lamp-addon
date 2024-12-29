@@ -53,6 +53,10 @@
           "connection_south": false,
           "connection_west": false
         }
+      },
+      "minecraft:collision_box": {
+        "origin": [-5, 3, -5],
+        "size": [10, 10, 10]
       }
     },
     "permutations": [
