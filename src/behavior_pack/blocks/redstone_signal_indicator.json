@@ -37,6 +37,10 @@
           "render_method": "blend"
         }
       },
+      "minecraft:tick": {
+        "interval_range": [5, 6],
+        "looping": true
+      },
       "minecraft:geometry": {
         "identifier": "geometry.lamp.redstone_signal_indicator",
         "bone_visibility": {
