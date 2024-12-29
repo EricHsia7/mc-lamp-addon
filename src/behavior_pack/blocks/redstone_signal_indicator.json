@@ -7,9 +7,14 @@
       "register_to_creative_menu": true,
       "menu_category": {
         "category": "items"
+      },
+      "states": {
+        "lamp:redstone_signal": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
       }
     },
     "components": {
+      "tag:lamp:redstone_responsive": {},
+      "minecraft:custom_components": ["lamp:redstone_responsive_component"],
       "minecraft:display_name": "Redstone Signal Indicator",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 2
@@ -55,7 +60,7 @@
     },
     "permutations": [
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 0",
+        "condition": "q.block_state('lamp:redstone_signal') == 0",
         "components": {
           "minecraft:light_emission": 0,
           "minecraft:geometry": {
@@ -81,7 +86,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 1",
+        "condition": "q.block_state('lamp:redstone_signal') == 1",
         "components": {
           "minecraft:light_emission": 1,
           "minecraft:geometry": {
@@ -107,7 +112,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 2",
+        "condition": "q.block_state('lamp:redstone_signal') == 2",
         "components": {
           "minecraft:light_emission": 2,
           "minecraft:geometry": {
@@ -133,7 +138,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 3",
+        "condition": "q.block_state('lamp:redstone_signal') == 3",
         "components": {
           "minecraft:light_emission": 3,
           "minecraft:geometry": {
@@ -159,7 +164,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 4",
+        "condition": "q.block_state('lamp:redstone_signal') == 4",
         "components": {
           "minecraft:light_emission": 4,
           "minecraft:geometry": {
@@ -185,7 +190,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 5",
+        "condition": "q.block_state('lamp:redstone_signal') == 5",
         "components": {
           "minecraft:light_emission": 5,
           "minecraft:geometry": {
@@ -211,7 +216,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 6",
+        "condition": "q.block_state('lamp:redstone_signal') == 6",
         "components": {
           "minecraft:light_emission": 6,
           "minecraft:geometry": {
@@ -237,7 +242,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 7",
+        "condition": "q.block_state('lamp:redstone_signal') == 7",
         "components": {
           "minecraft:light_emission": 7,
           "minecraft:geometry": {
@@ -263,7 +268,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 8",
+        "condition": "q.block_state('lamp:redstone_signal') == 8",
         "components": {
           "minecraft:light_emission": 8,
           "minecraft:geometry": {
@@ -289,7 +294,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 9",
+        "condition": "q.block_state('lamp:redstone_signal') == 9",
         "components": {
           "minecraft:light_emission": 9,
           "minecraft:geometry": {
@@ -315,7 +320,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 10",
+        "condition": "q.block_state('lamp:redstone_signal') == 10",
         "components": {
           "minecraft:light_emission": 10,
           "minecraft:geometry": {
@@ -341,7 +346,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 11",
+        "condition": "q.block_state('lamp:redstone_signal') == 11",
         "components": {
           "minecraft:light_emission": 11,
           "minecraft:geometry": {
@@ -367,7 +372,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 12",
+        "condition": "q.block_state('lamp:redstone_signal') == 12",
         "components": {
           "minecraft:light_emission": 12,
           "minecraft:geometry": {
@@ -393,7 +398,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 13",
+        "condition": "q.block_state('lamp:redstone_signal') == 13",
         "components": {
           "minecraft:light_emission": 13,
           "minecraft:geometry": {
@@ -419,7 +424,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 14",
+        "condition": "q.block_state('lamp:redstone_signal') == 14",
         "components": {
           "minecraft:light_emission": 14,
           "minecraft:geometry": {
@@ -445,7 +450,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:redstone_signal') == 15",
+        "condition": "q.block_state('lamp:redstone_signal') == 15",
         "components": {
           "minecraft:light_emission": 15,
           "minecraft:geometry": {

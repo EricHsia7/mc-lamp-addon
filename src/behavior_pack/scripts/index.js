@@ -36,6 +36,41 @@ function getInverseDirection(direction) {
   }
 }
 
+function isRedstoneRelated(block) {
+  const qualifiedList = ['minecraft:redstone_wire', 'minecraft:powered_repeater', 'minecraft:unpowered_repeater', 'minecraft:powered_comparator', 'minecraft:unpowered_comparator'];
+  const blockTypeId = block.typeId;
+  if (qualifiedList.indexOf(blockTypeId) > -1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function getRedstoneSignal(block) {
+  const blockTypeId = block.typeId;
+  let signal = 0;
+  switch (blockTypeId) {
+    case 'minecraft:redstone_wire':
+      signal = parseInt(block.permutation.getState('minecraft:redstone_signal'));
+      break;
+    case 'minecraft:powered_repeater':
+      signal = 15;
+      break;
+    case 'minecraft:unpowered_repeater':
+      signal = 0;
+      break;
+    case 'minecraft:powered_comparator':
+      signal = 15;
+      break;
+    case 'minecraft:unpowered_comparator':
+      signal = 0;
+      break;
+    default:
+      signal = 0;
+      break;
+  }
+}
+
 // Function to check blocks and set connection states
 function updatePlacedBlockConnections(event) {
   const replacedBlock = event.block; // This is the block replaced by the placed block (air is also a type of blocks)
@@ -153,7 +188,35 @@ const LampAdjustableLightnessComponent = {
   }
 };
 
+const LampRedstoneResponsiveComponent = {
+  onTick({ block, dimension }) {
+    const isRedstoneResponsive = block.hasTag('lamp:redstone_responsive');
+    if (isRedstoneResponsive) {
+      const blockLocation = block.location;
+      let receivedRedstoneSignals = [0];
+      for (const [direction, offset] of Object.entries(directions)) {
+        const neighborLocation = {
+          x: blockLocation.x + offset.x,
+          y: blockLocation.y + offset.y,
+          z: blockLocation.z + offset.z
+        };
+
+        const neighborBlock = dimension.getBlock(neighborLocation);
+        const neighborBlockType = neighborBlock.typeId;
+        const neighborBlockRedstoneRelated = isRedstoneRelated(neighborBlock);
+        if (neighborBlock && neighborBlockRedstoneRelated) {
+          const neighborBlockRedstoneSignal = getRedstoneSignal(neighborBlock);
+          receivedRedstoneSignals.push(neighborBlockRedstoneSignal);
+        }
+      }
+      const determiningRestoneSignal = Math.max(receivedRedstoneSignals);
+      block.setPermutation(placedBlock.permutation.withState(`lamp:redstone_signal`, determiningRestoneSignal));
+    }
+  }
+};
+
 world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
   blockComponentRegistry.registerCustomComponent('lamp:bistable_component', LampBistableComponent);
   blockComponentRegistry.registerCustomComponent('lamp:adjustable_lightness_component', LampAdjustableLightnessComponent);
+  blockComponentRegistry.registerCustomComponent('lamp:redstone_responsive_component', LampRedstoneResponsiveComponent);
 });
