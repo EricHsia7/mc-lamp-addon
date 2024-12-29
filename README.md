@@ -40,7 +40,7 @@ Featuring dark frames and glass with excited gas inside the container, it caters
 
 ### Redstone Signal Indicator
 
-Displays up to 15 luminous slices and emits light levels based on the redstone power of adjacent blocks (up, down, north, east, south, and west) without requiring direct connections. When multiple redstone-powered blocks are detected, it uses the highest power level among them.
+Displays up to 15 luminous slices and emits light levels based on the redstone power of adjacent blocks (up, down, north, east, south, and west) without requiring direct connections. When multiple redstone-powered blocks are detected, it adheres to the highest power level among them.
 
 ### Toast Lamp
 
