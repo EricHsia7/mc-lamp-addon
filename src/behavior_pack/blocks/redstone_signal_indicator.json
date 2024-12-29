@@ -38,7 +38,7 @@
         }
       },
       "minecraft:tick": {
-        "interval_range": [5, 6],
+        "interval_range": [5, 5],
         "looping": true
       },
       "minecraft:geometry": {
