@@ -28,6 +28,9 @@
     },
     "redstone_signal_indicator": {
       "textures": "textures/blocks/redstone_signal_indicator.png"
+    },
+    "caged_light_bulb": {
+      "textures": "textures/blocks/caged_light_bulb.png"
     }
   }
 }

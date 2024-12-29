@@ -23,5 +23,8 @@
   },
   "lamp:redstone_signal_indicator": {
     "sound": "glass"
+  },
+  "lamp:caged_light_bulb": {
+    "sound": "stone"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:caged_light_bulb"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" P ", "SPS", "STS"],
+    "key": {
+      "P": {
+        "item": "minecraft:planks"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "T": {
+        "item": "minecraft:torch"
+      }
+    },
+    "result": {
+      "item": "lamp:caged_light_bulb"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:torch"
+      }
+    ]
+  }
+}

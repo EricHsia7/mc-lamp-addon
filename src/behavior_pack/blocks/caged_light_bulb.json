@@ -1,0 +1,43 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lamp:caged_light_bulb",
+      "is_experimental": false,
+      "register_to_creative_menu": true,
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Caged Light Bulb",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:friction": 0.4,
+      "minecraft:flammable": false,
+      "minecraft:map_color": "#FDF1D1",
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 15,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": false,
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "caged_light_bulb",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.lamp.caged_light_bulb",
+        "bone_visibility": {
+          "bone": true
+        }
+      }
+    }
+  }
+}
