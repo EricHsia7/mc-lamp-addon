@@ -37,7 +37,7 @@ function getInverseDirection(direction) {
 }
 
 function isRedstoneRelated(block) {
-  const qualifiedList = ['minecraft:redstone_wire', 'minecraft:powered_repeater', 'minecraft:unpowered_repeater', 'minecraft:powered_comparator', 'minecraft:unpowered_comparator', 'minecraft:daylight_detector', 'minecraft:daylight_detector_inverted', 'observer'];
+  const qualifiedList = ['minecraft:redstone_wire', 'minecraft:powered_repeater', 'minecraft:unpowered_repeater', 'minecraft:powered_comparator', 'minecraft:unpowered_comparator', 'minecraft:daylight_detector', 'minecraft:daylight_detector_inverted'];
   const blockTypeId = block.typeId;
   if (qualifiedList.indexOf(blockTypeId) > -1) {
     return true;
