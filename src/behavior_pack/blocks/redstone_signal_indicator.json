@@ -29,7 +29,7 @@
       "minecraft:light_emission": 0,
       "minecraft:redstone_conductivity": {
         "redstone_conductor": true,
-        "allows_wire_to_step_down": false
+        "allows_wire_to_step_down": true
       },
       "minecraft:material_instances": {
         "*": {
