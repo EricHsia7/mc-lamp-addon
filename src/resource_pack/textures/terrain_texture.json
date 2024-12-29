@@ -25,6 +25,9 @@
     },
     "toast_lamp": {
       "textures": "textures/blocks/toast_lamp.png"
+    },
+    "redstone_signal_indicator": {
+      "textures": "textures/blocks/redstone_signal_indicator.png"
     }
   }
 }

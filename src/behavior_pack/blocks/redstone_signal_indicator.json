@@ -1,0 +1,475 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lamp:redstone_signal_indicator",
+      "is_experimental": false,
+      "register_to_creative_menu": true,
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Redstone Signal Indicator",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:friction": 0.4,
+      "minecraft:flammable": false,
+      "minecraft:map_color": "#4EB0E2",
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 0,
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": false
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "redstone_signal_indicator",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.lamp.redstone_signal_indicator",
+        "bone_visibility": {
+          "s1": false,
+          "s2": false,
+          "s3": false,
+          "s4": false,
+          "s5": false,
+          "s6": false,
+          "s7": false,
+          "s8": false,
+          "s9": false,
+          "s10": false,
+          "s11": false,
+          "s12": false,
+          "s13": false,
+          "s14": false,
+          "s15": false
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 0",
+        "components": {
+          "minecraft:light_emission": 0,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": false,
+              "s2": false,
+              "s3": false,
+              "s4": false,
+              "s5": false,
+              "s6": false,
+              "s7": false,
+              "s8": false,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 1",
+        "components": {
+          "minecraft:light_emission": 1,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": false,
+              "s3": false,
+              "s4": false,
+              "s5": false,
+              "s6": false,
+              "s7": false,
+              "s8": false,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 2",
+        "components": {
+          "minecraft:light_emission": 2,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": false,
+              "s4": false,
+              "s5": false,
+              "s6": false,
+              "s7": false,
+              "s8": false,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 3",
+        "components": {
+          "minecraft:light_emission": 3,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": false,
+              "s5": false,
+              "s6": false,
+              "s7": false,
+              "s8": false,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 4",
+        "components": {
+          "minecraft:light_emission": 4,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": false,
+              "s6": false,
+              "s7": false,
+              "s8": false,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 5",
+        "components": {
+          "minecraft:light_emission": 5,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": false,
+              "s7": false,
+              "s8": false,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 6",
+        "components": {
+          "minecraft:light_emission": 6,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": false,
+              "s8": false,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 7",
+        "components": {
+          "minecraft:light_emission": 7,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": false,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 8",
+        "components": {
+          "minecraft:light_emission": 8,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": true,
+              "s9": false,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 9",
+        "components": {
+          "minecraft:light_emission": 9,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": true,
+              "s9": true,
+              "s10": false,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 10",
+        "components": {
+          "minecraft:light_emission": 10,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": true,
+              "s9": true,
+              "s10": true,
+              "s11": false,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 11",
+        "components": {
+          "minecraft:light_emission": 11,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": true,
+              "s9": true,
+              "s10": true,
+              "s11": true,
+              "s12": false,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 12",
+        "components": {
+          "minecraft:light_emission": 12,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": true,
+              "s9": true,
+              "s10": true,
+              "s11": true,
+              "s12": true,
+              "s13": false,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 13",
+        "components": {
+          "minecraft:light_emission": 13,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": true,
+              "s9": true,
+              "s10": true,
+              "s11": true,
+              "s12": true,
+              "s13": true,
+              "s14": false,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 14",
+        "components": {
+          "minecraft:light_emission": 14,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": true,
+              "s9": true,
+              "s10": true,
+              "s11": true,
+              "s12": true,
+              "s13": true,
+              "s14": true,
+              "s15": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:redstone_signal') == 15",
+        "components": {
+          "minecraft:light_emission": 15,
+          "minecraft:geometry": {
+            "identifier": "geometry.lamp.redstone_signal_indicator",
+            "bone_visibility": {
+              "s1": true,
+              "s2": true,
+              "s3": true,
+              "s4": true,
+              "s5": true,
+              "s6": true,
+              "s7": true,
+              "s8": true,
+              "s9": true,
+              "s10": true,
+              "s11": true,
+              "s12": true,
+              "s13": true,
+              "s14": true,
+              "s15": true
+            }
+          }
+        }
+      }
+    ]
+  }
+}
