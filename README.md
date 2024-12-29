@@ -1,6 +1,9 @@
+
 <img src="./cover.jpeg" alt="LAMP" width="100%">
 
+<div align="center">
 Lamp, an addon for Minecraft Bedrock/Pocket Edition, introduces various types of lamps into your world.
+</div>
 
 ## Install
 
