@@ -1,4 +1,3 @@
-
 <img src="./cover.jpeg" alt="LAMP" width="100%">
 
 <div align="center">
