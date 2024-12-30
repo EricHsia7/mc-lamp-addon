@@ -80,6 +80,10 @@ Featuring dark frames and glass with excited gas inside the container, it caters
 
 Displays up to 15 luminous slices and emits light levels based on the redstone power of adjacent blocks (up, down, north, east, south, and west) without requiring direct connections. When multiple redstone-powered blocks are detected, it adheres to the highest power level among them.
 
+### RGB Lamp
+
+Emits dynamic and colorful light at level 15.
+
 ### Toast Lamp
 
 Designed to resemble a slice of toast, this whimsical lamp adds a playful touch to any room. It emits a warm, golden glow reminiscent of perfectly toasted bread.
