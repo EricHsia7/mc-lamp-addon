@@ -1,0 +1,7 @@
+[
+  {
+    "atlas_tile": "rgb_lamp",
+    "flipbook_texture": "textures/blocks/rgb_lamp.png",
+    "ticks_per_frame": 3
+  }
+]

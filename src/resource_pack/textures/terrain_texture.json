@@ -31,6 +31,9 @@
     },
     "caged_light_bulb": {
       "textures": "textures/blocks/caged_light_bulb.png"
+    },
+    "rgb_lamp": {
+      "textures": "textures/blocks/rgb_lamp.png"
     }
   }
 }
