@@ -26,5 +26,8 @@
   },
   "lamp:caged_light_bulb": {
     "sound": "stone"
+  },
+  "lamp:rgb_lamp": {
+    "sound": "glass"
   }
 }
