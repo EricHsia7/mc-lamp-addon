@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:rgb_lamp"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["WWW", "POV", "WWW"],
+    "key": {
+      "W": {
+        "item": "minecraft:white_stained_glass_pane"
+      },
+      "P": {
+        "item": "minecraft:pearlescent_froglight"
+      },
+      "O": {
+        "item": "minecraft:ochre_froglight"
+      },
+      "V": {
+        "item": "minecraft:verdant_froglight"
+      }
+    },
+    "result": {
+      "item": "lamp:rgb_lamp"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_stained_glass_pane"
+      }
+    ]
+  }
+}
