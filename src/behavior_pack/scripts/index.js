@@ -11,29 +11,16 @@ const directions = {
 
 // Function to get inverse direction
 function getInverseDirection(direction) {
-  switch (direction) {
-    case 'north':
-      return 'south';
-      break;
-    case 'south':
-      return 'north';
-      break;
-    case 'up':
-      return 'down';
-      break;
-    case 'down':
-      return 'up';
-      break;
-    case 'west':
-      return 'east';
-      break;
-    case 'east':
-      return 'west';
-      break;
-    default:
-      return 'error';
-      break;
-  }
+  const inverseDirections = {
+    north: 'south',
+    south: 'north',
+    up: 'down',
+    down: 'up',
+    west: 'east',
+    east: 'west'
+  };
+
+  return inverseDirections[direction] || 'error';
 }
 
 function isRedstoneRelated(block) {
