@@ -29,7 +29,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "street_lamp",
-          "render_method": "alpha_test"
+          "render_method": "alpha_test_single_sided"
         }
       },
       "minecraft:geometry": {
