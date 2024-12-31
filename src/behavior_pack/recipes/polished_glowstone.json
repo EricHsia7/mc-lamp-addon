@@ -12,7 +12,8 @@
       }
     },
     "result": {
-      "item": "lamp:polished_glowstone"
+      "item": "lamp:polished_glowstone",
+      "count": 9
     },
     "unlock": [
       {
