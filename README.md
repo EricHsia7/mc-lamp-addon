@@ -86,6 +86,8 @@ Displays up to 15 luminous slices and emits light levels based on the redstone p
 
 Emits dynamic and colorful light at level 15.
 
+### Street Lamp
+
 ### Toast Lamp
 
 Designed to resemble a slice of toast, this whimsical lamp adds a playful touch to any room. It emits a warm, golden glow reminiscent of perfectly toasted bread.
