@@ -39,7 +39,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "candle_lamp",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         }
       },
       "minecraft:geometry": {
