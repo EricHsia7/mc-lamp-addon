@@ -34,7 +34,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "incandescent_light_bulb",
-          "render_method": "blend"
+          "render_method": "alpha_test"
         }
       },
       "minecraft:geometry": {
@@ -43,7 +43,7 @@
           "button": true,
           "bottom": true,
           "glasses": true,
-          "strings": true,
+          "strings": false,
           "light": true
         }
       }

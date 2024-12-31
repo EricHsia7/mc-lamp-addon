@@ -38,7 +38,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "light_tube",
-          "render_method": "blend"
+          "render_method": "alpha_test"
         }
       },
       "minecraft:geometry": {

@@ -34,7 +34,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "redstone_signal_indicator",
-          "render_method": "blend"
+          "render_method": "alpha_test"
         }
       },
       "minecraft:tick": {

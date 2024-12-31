@@ -29,7 +29,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "caged_light_bulb",
-          "render_method": "blend"
+          "render_method": "alpha_test"
         }
       },
       "minecraft:geometry": {

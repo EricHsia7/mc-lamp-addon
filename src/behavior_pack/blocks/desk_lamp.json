@@ -34,7 +34,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "desk_lamp",
-          "render_method": "blend"
+          "render_method": "alpha_test"
         }
       },
       "minecraft:geometry": {
