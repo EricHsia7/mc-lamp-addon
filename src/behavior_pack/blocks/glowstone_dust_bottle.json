@@ -19,7 +19,7 @@
       },
       "minecraft:friction": 0.4,
       "minecraft:flammable": false,
-      "minecraft:map_color": "#FDF1D1",
+      "minecraft:map_color": "#E6A549",
       "minecraft:light_dampening": 0,
       "minecraft:light_emission": 10,
       "minecraft:redstone_conductivity": {
