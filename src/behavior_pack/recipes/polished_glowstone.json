@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "minecraft:polished_glowstone"
+    },
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:glowstone",
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "minecraft:polished_glowstone"
+    }
+  }
+}

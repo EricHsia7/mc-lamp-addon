@@ -29,5 +29,8 @@
   },
   "lamp:rgb_lamp": {
     "sound": "glass"
+  },
+  "lamp:polished_glowstone": {
+    "sound": "glass"
   }
 }
