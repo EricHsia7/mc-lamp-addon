@@ -32,5 +32,8 @@
   },
   "lamp:polished_glowstone": {
     "sound": "glass"
+  },
+  "lamp:street_lamp": {
+    "sound": "stone"
   }
 }

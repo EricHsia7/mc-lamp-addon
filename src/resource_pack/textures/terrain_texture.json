@@ -37,6 +37,9 @@
     },
     "polished_glowstone": {
       "textures": "textures/blocks/polished_glowstone.png"
+    },
+    "street_lamp": {
+      "textures": "textures/blocks/street_lamp.png"
     }
   }
 }
