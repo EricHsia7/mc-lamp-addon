@@ -64,6 +64,8 @@ Is bistable and switchable via players' interaction (click).
 
 Emits subtle, cold light that is perfect for a dark, tranquil room.
 
+### Glowstone Dust Bottle
+
 ### Incandescent Light Bulb
 
 Provides a warm, soft light that is ideal for creating cozy and inviting spaces in your Minecraft world.

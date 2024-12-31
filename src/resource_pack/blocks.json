@@ -35,5 +35,8 @@
   },
   "lamp:street_lamp": {
     "sound": "stone"
+  },
+  "lamp:glowstone_dust_bottle": {
+    "sound": "glass"
   }
 }

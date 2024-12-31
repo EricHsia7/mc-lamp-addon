@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:glowstone_dust_bottle"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["G G", "G#G", "GGG"],
+    "key": {
+      "#": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "G": {
+        "item": "minecraft:glass"
+      }
+    },
+    "result": {
+      "item": "lamp:glowstone_dust_bottle"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glowstone_dust"
+      }
+    ]
+  }
+}

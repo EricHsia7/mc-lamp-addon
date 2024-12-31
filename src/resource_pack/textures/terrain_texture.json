@@ -40,6 +40,9 @@
     },
     "street_lamp": {
       "textures": "textures/blocks/street_lamp.png"
+    },
+    "glowstone_dust_bottle": {
+      "textures": "textures/blocks/glowstone_dust_bottle.png"
     }
   }
 }

@@ -1,0 +1,59 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.lamp.glowstone_dust_bottle",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "bone",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-5, 0, -5],
+              "size": [10, 14, 10],
+              "uv": {
+                "north": { "uv": [0, 40], "uv_size": [40, 56] },
+                "east": { "uv": [0, 40], "uv_size": [40, 56] },
+                "south": { "uv": [0, 40], "uv_size": [40, 56] },
+                "west": { "uv": [0, 40], "uv_size": [40, 56] },
+                "up": { "uv": [80, 40], "uv_size": [-40, -40] },
+                "down": { "uv": [40, 40], "uv_size": [-40, -40] }
+              }
+            },
+            {
+              "origin": [-3.5, 14, -3.5],
+              "size": [7, 2, 7],
+              "uv": {
+                "north": { "uv": [80, 28], "uv_size": [28, 8] },
+                "east": { "uv": [80, 28], "uv_size": [28, 8] },
+                "south": { "uv": [80, 28], "uv_size": [28, 8] },
+                "west": { "uv": [80, 28], "uv_size": [28, 8] },
+                "up": { "uv": [108, 28], "uv_size": [-28, -28] },
+                "down": { "uv": [108, 64], "uv_size": [-28, -28] }
+              }
+            },
+            {
+              "origin": [-4.5, 0.5, -4.5],
+              "size": [9, 5, 9],
+              "uv": {
+                "north": { "uv": [40, 76], "uv_size": [36, 23] },
+                "east": { "uv": [40, 76], "uv_size": [36, 23] },
+                "south": { "uv": [40, 76], "uv_size": [36, 23] },
+                "west": { "uv": [40, 76], "uv_size": [36, 23] },
+                "up": { "uv": [76, 76], "uv_size": [-36, -36] },
+                "down": { "uv": [76, 76], "uv_size": [-36, -36] }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
