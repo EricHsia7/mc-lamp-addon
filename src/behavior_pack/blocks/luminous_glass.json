@@ -38,7 +38,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "luminous_glass",
-          "render_method": "alpha_test_single_sided"
+          "render_method": "blend"
         }
       },
       "minecraft:geometry": {
