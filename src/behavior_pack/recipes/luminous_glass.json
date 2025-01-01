@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:luminous_glass"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["GGG", "G#G", "GGG"],
+    "key": {
+      "#": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "G": {
+        "item": "minecraft:glass"
+      }
+    },
+    "result": {
+      "item": "lamp:luminous_glass",
+      "count": 8
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glowstone_dust"
+      }
+    ]
+  }
+}

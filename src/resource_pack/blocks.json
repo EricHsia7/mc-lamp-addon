@@ -38,5 +38,8 @@
   },
   "lamp:glowstone_dust_bottle": {
     "sound": "glass"
+  },
+  "lamp:luminous_glass": {
+    "sound": "glass"
   }
 }

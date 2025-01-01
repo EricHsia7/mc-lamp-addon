@@ -74,6 +74,8 @@ Provides a warm, soft light that is ideal for creating cozy and inviting spaces 
 
 Offers a sleek and efficient lighting solution that can be used to create continuous lines of light, ideal for highlighting pathways or architectural features.
 
+### Luminous Glass
+
 ### Neon Lantern
 
 Featuring dark frames and glass with excited gas inside the container, it caters to a warm, hospitable atmosphere.

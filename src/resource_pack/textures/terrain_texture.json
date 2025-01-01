@@ -43,6 +43,9 @@
     },
     "glowstone_dust_bottle": {
       "textures": "textures/blocks/glowstone_dust_bottle.png"
+    },
+    "luminous_glass": {
+      "textures": "textures/blocks/luminous_glass.png"
     }
   }
 }
