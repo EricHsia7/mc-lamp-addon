@@ -46,6 +46,14 @@
           "strings": false,
           "light": true
         }
+      },
+      "minecraft:collision_box": {
+        "origin": [-5, 0, -5],
+        "size": [10, 12.5, 10]
+      },
+      "minecraft:selection_box": {
+        "origin": [-5, 0, -5],
+        "size": [10, 12.5, 10]
       }
     },
     "permutations": [
