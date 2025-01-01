@@ -163,9 +163,9 @@ function updatePistonPushedBlockConnections(event) {
             };
             const extendedNeighborBlock = event.dimension.getBlock(extendedNeighborLocation);
             const extendedNeighborBlockType = extendedNeighborBlock.typeId;
-            const neighbor2BlockConnectable = extendedNeighborBlock.hasTag('lamp:connectable');
-            if (extendedNeighborBlock && extendedNeighborBlockType === neighborBlockType && neighbor2BlockConnectable) {
-              neighborBlock.setPermutation(attatchedBlock.permutation.withState(`lamp:connection_${extendedDirection}`, true));
+            const extendedNeighborBlockConnectable = extendedNeighborBlock.hasTag('lamp:connectable');
+            if (extendedNeighborBlock && extendedNeighborBlockType === neighborBlockType && extendedNeighborBlockConnectable) {
+              neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${extendedDirection}`, true));
               extendedNeighborBlock.setPermutation(extendedNeighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(extendedDirection)}`, true));
             } else {
               if (neighborBlockConnectable) {
