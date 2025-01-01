@@ -100,6 +100,7 @@ function updatePistonPushedBlockConnections(event) {
   const pistonFacingDirection = ['down', 'up', 'south', 'north', 'east', 'west'][pistonFacingDirectionIndex];
   const locationOffset = directions[pistonFacingDirection];
   const attatchedBlocks = event.piston.getAttachedBlocks();
+
   system.runTimeout(function () {
     if (typeof attatchedBlocks === 'object' && Array.isArray(attatchedBlocks)) {
       for (const attatchedBlockPreviousLocation of attatchedBlocks) {
@@ -108,16 +109,19 @@ function updatePistonPushedBlockConnections(event) {
           y: attatchedBlockPreviousLocation.y,
           z: attatchedBlockPreviousLocation.z
         };
+
         if (pistonState === 'Expanding') {
           attatchedBlockCurrentLocation.x += locationOffset.x;
           attatchedBlockCurrentLocation.y += locationOffset.y;
           attatchedBlockCurrentLocation.z += locationOffset.z;
         }
+
         if (pistonState === 'Retracting') {
           attatchedBlockCurrentLocation.x -= locationOffset.x;
           attatchedBlockCurrentLocation.y -= locationOffset.y;
           attatchedBlockCurrentLocation.z -= locationOffset.z;
         }
+
         // Scans the blocks around after being pushed
         const attatchedBlock = event.dimension.getBlock(attatchedBlockCurrentLocation);
         const attatchedBlockType = attatchedBlock.typeId;
@@ -189,6 +193,7 @@ world.afterEvents.playerBreakBlock.subscribe((event) => {
   updateBrokenBlockConnections(event);
 });
 
+// Event listener for piston pushes
 world.afterEvents.pistonActivate.subscribe((event) => {
   updatePistonPushedBlockConnections(event);
 });
