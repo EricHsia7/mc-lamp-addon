@@ -5,7 +5,7 @@
       "identifier": "lamp:luminous_glass"
     },
     "tags": ["crafting_table"],
-    "pattern": ["GGG", "G#G", "GGG"],
+    "pattern": ["###", "#G#", "###"],
     "key": {
       "#": {
         "item": "minecraft:glowstone_dust"
@@ -16,7 +16,7 @@
     },
     "result": {
       "item": "lamp:luminous_glass",
-      "count": 8
+      "count": 1
     },
     "unlock": [
       {
