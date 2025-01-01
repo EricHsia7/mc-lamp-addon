@@ -260,11 +260,12 @@ const LampRedstoneResponsiveComponent = {
         };
 
         const neighborBlock = dimension.getBlock(neighborLocation);
-        const neighborBlockType = neighborBlock.typeId;
-        const neighborBlockRedstoneRelated = isRedstoneRelated(neighborBlock);
-        if (neighborBlock && neighborBlockRedstoneRelated) {
-          const neighborBlockRedstonePower = neighborBlock.getRedstonePower();
-          receivedRedstonePowers.push(neighborBlockRedstonePower);
+        if (neighborBlock) {
+          const neighborBlockRedstoneRelated = isRedstoneRelated(neighborBlock);
+          if (neighborBlockRedstoneRelated) {
+            const neighborBlockRedstonePower = neighborBlock.getRedstonePower();
+            receivedRedstonePowers.push(neighborBlockRedstonePower);
+          }
         }
       }
       const determiningRestonePower = Math.max(...receivedRedstonePowers);
