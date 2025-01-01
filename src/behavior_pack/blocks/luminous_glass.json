@@ -7,9 +7,18 @@
       "register_to_creative_menu": true,
       "menu_category": {
         "category": "items"
+      },
+      "states": {
+        "lamp:connection_up": [false, true],
+        "lamp:connection_down": [false, true],
+        "lamp:connection_north": [false, true],
+        "lamp:connection_west": [false, true],
+        "lamp:connection_east": [false, true],
+        "lamp:connection_south": [false, true]
       }
     },
     "components": {
+      "tag:lamp:connectable": {},
       "minecraft:display_name": "Luminous Glass",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 2
