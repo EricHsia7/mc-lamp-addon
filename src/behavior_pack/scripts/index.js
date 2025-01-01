@@ -1,4 +1,4 @@
-import { world } from '@minecraft/server';
+import { world, system } from '@minecraft/server';
 
 const directions = {
   north: { x: 0, y: 0, z: -1 },
@@ -92,6 +92,97 @@ function updateBrokenBlockConnections(event) {
   }
 }
 
+function updatePistonPushedBlockConnections(event) {
+  const pistonState = event.piston.state;
+  const pistonLocation = event.piston.block.location;
+  const pistonBlock = event.dimension.getBlock(pistonLocation);
+  const pistonFacingDirectionIndex = pistonBlock.permutation.getState('facing_direction');
+  const pistonFacingDirection = ['down', 'up', 'south', 'north', 'east', 'west'][pistonFacingDirectionIndex];
+  const locationOffset = directions[pistonFacingDirection];
+  const attatchedBlocks = event.piston.getAttachedBlocks();
+
+  system.runTimeout(function () {
+    if (typeof attatchedBlocks === 'object' && Array.isArray(attatchedBlocks)) {
+      for (const attatchedBlockPreviousLocation of attatchedBlocks) {
+        let attatchedBlockCurrentLocation = {
+          x: attatchedBlockPreviousLocation.x,
+          y: attatchedBlockPreviousLocation.y,
+          z: attatchedBlockPreviousLocation.z
+        };
+
+        if (pistonState === 'Expanding') {
+          attatchedBlockCurrentLocation.x += locationOffset.x;
+          attatchedBlockCurrentLocation.y += locationOffset.y;
+          attatchedBlockCurrentLocation.z += locationOffset.z;
+        }
+
+        if (pistonState === 'Retracting') {
+          attatchedBlockCurrentLocation.x -= locationOffset.x;
+          attatchedBlockCurrentLocation.y -= locationOffset.y;
+          attatchedBlockCurrentLocation.z -= locationOffset.z;
+        }
+
+        // Scans the blocks around after being pushed
+        const attatchedBlock = event.dimension.getBlock(attatchedBlockCurrentLocation);
+        const attatchedBlockType = attatchedBlock.typeId;
+        const attatchedBlockConnectable = attatchedBlock.hasTag('lamp:connectable');
+        if (attatchedBlockConnectable) {
+          const attatchedBlockLocation = attatchedBlock.location;
+          for (const [direction, offset] of Object.entries(directions)) {
+            const neighborLocation = {
+              x: attatchedBlockLocation.x + offset.x,
+              y: attatchedBlockLocation.y + offset.y,
+              z: attatchedBlockLocation.z + offset.z
+            };
+            const neighborBlock = event.dimension.getBlock(neighborLocation);
+            const neighborBlockType = neighborBlock.typeId;
+            const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
+            if (neighborBlock && neighborBlockType === attatchedBlockType && neighborBlockConnectable) {
+              attatchedBlock.setPermutation(attatchedBlock.permutation.withState(`lamp:connection_${direction}`, true));
+              neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
+            } else {
+              if (attatchedBlockConnectable) {
+                attatchedBlock.setPermutation(attatchedBlock.permutation.withState(`lamp:connection_${direction}`, false));
+              }
+            }
+          }
+        }
+
+        // Scans the blocks around the previous location
+        for (const [direction, offset] of Object.entries(directions)) {
+          const neighborLocation = {
+            x: attatchedBlockPreviousLocation.x + offset.x,
+            y: attatchedBlockPreviousLocation.y + offset.y,
+            z: attatchedBlockPreviousLocation.z + offset.z
+          };
+          const neighborBlock = event.dimension.getBlock(neighborLocation);
+          const neighborBlockType = neighborBlock.typeId;
+          const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
+
+          for (const [extendedDirection, offset] of Object.entries(directions)) {
+            const extendedNeighborLocation = {
+              x: neighborLocation.x + offset.x,
+              y: neighborLocation.y + offset.y,
+              z: neighborLocation.z + offset.z
+            };
+            const extendedNeighborBlock = event.dimension.getBlock(extendedNeighborLocation);
+            const extendedNeighborBlockType = extendedNeighborBlock.typeId;
+            const extendedNeighborBlockConnectable = extendedNeighborBlock.hasTag('lamp:connectable');
+            if (extendedNeighborBlock && extendedNeighborBlockType === neighborBlockType && extendedNeighborBlockConnectable) {
+              neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${extendedDirection}`, true));
+              extendedNeighborBlock.setPermutation(extendedNeighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(extendedDirection)}`, true));
+            } else {
+              if (neighborBlockConnectable) {
+                neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${extendedDirection}`, false));
+              }
+            }
+          }
+        }
+      }
+    }
+  }, 4);
+}
+
 // Event listener for block placement
 world.afterEvents.playerPlaceBlock.subscribe((event) => {
   updatePlacedBlockConnections(event);
@@ -100,6 +191,11 @@ world.afterEvents.playerPlaceBlock.subscribe((event) => {
 // Event listener for block break
 world.afterEvents.playerBreakBlock.subscribe((event) => {
   updateBrokenBlockConnections(event);
+});
+
+// Event listener for piston pushes
+world.afterEvents.pistonActivate.subscribe((event) => {
+  updatePistonPushedBlockConnections(event);
 });
 
 const LampBistableComponent = {
