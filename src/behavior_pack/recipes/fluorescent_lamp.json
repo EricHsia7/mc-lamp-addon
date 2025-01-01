@@ -5,13 +5,13 @@
       "identifier": "lamp:fluorescent_lamp"
     },
     "tags": ["crafting_table"],
-    "pattern": ["GGG", "GSG", "GGG"],
+    "pattern": ["GGG", "GCG", "GGG"],
     "key": {
       "G": {
         "item": "minecraft:glass"
       },
-      "S": {
-        "item": "minecraft:glowstone_dust"
+      "C": {
+        "item": "minecraft:prismarine_crystals"
       }
     },
     "result": {
