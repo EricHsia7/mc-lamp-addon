@@ -19,7 +19,7 @@ geo = {
 	]
 }
 
-
+# t{up}{bottom}{left}{right}
 textureCoordinates = {
     "t0000": [3, 3],
     "t0001": [3, 2],
