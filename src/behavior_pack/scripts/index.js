@@ -92,6 +92,41 @@ function updateBrokenBlockConnections(event) {
   }
 }
 
+function updatePistonPushedBlockConnections(event) {
+  const pistonState = event.piston.state;
+  if (pistonState === 'Expanded' || pistonState === 'Retracted') {
+    const attatchedBlocks = event.piston.getAttachedBlocks();
+    if (typeof attatchedBlocks === 'object' && Array.isArray(attatchedBlocks)) {
+      for (const attatchedBlock of attatchedBlocks) {
+        const attatchedBlockType = attatchedBlock.typeId;
+        const attatchedBlockConnectable = attatchedBlock.hasTag('lamp:connectable');
+        if (attatchedBlockConnectable) {
+          const attatchedBlockLocation = attatchedBlock.location;
+          for (const [direction, offset] of Object.entries(directions)) {
+            const neighborLocation = {
+              x: attatchedBlockLocation.x + offset.x,
+              y: attatchedBlockLocation.y + offset.y,
+              z: attatchedBlockLocation.z + offset.z
+            };
+            const neighborBlock = dimension.getBlock(neighborLocation);
+            const neighborBlockType = neighborBlock.typeId;
+            const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
+
+            if (neighborBlock && neighborBlockType === attatchedBlockType && neighborBlockConnectable) {
+              attatchedBlock.setPermutation(attatchedBlock.permutation.withState(`lamp:connection_${direction}`, true));
+              neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
+            } else {
+              if (attatchedBlockConnectable) {
+                attatchedBlock.setPermutation(attatchedBlock.permutation.withState(`lamp:connection_${direction}`, false));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // Event listener for block placement
 world.afterEvents.playerPlaceBlock.subscribe((event) => {
   updatePlacedBlockConnections(event);
@@ -100,6 +135,10 @@ world.afterEvents.playerPlaceBlock.subscribe((event) => {
 // Event listener for block break
 world.afterEvents.playerBreakBlock.subscribe((event) => {
   updateBrokenBlockConnections(event);
+});
+
+world.afterEvents.pistonActivate.subscribe((event) => {
+  updatePistonPushedBlockConnections(event);
 });
 
 const LampBistableComponent = {
