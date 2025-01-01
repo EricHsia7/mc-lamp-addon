@@ -76,6 +76,8 @@ Offers a sleek and efficient lighting solution that can be used to create contin
 
 ### Luminous Glass
 
+Embedded with glowstone dust, the luminous glass can illuminate your windows elegantly. Plus, they can connect with each other, making a glass wall seamless.
+
 ### Neon Lantern
 
 Featuring dark frames and glass with excited gas inside the container, it caters to a warm, hospitable atmosphere.
