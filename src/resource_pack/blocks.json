@@ -77,5 +77,8 @@
   },
   "lamp:light_blue_luminous_glass": {
     "sound": "glass"
+  },
+  "lamp:light_gray_stained_luminous_glass": {
+    "sound": "glass"
   }
 }
