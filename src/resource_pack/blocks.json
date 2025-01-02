@@ -65,5 +65,8 @@
   },
   "lamp:orange_stained_luminous_glass": {
     "sound": "glass"
+  },
+  "lamp:green_stained_luminous_glass": {
+    "sound": "glass"
   }
 }
