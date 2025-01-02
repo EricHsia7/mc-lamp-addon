@@ -80,8 +80,8 @@
     "black_stained_luminous_glass": {
       "textures": "textures/blocks/black_stained_luminous_glass.png"
     },
-    "light_blue_luminous_glass": {
-      "textures": "textures/blocks/light_blue_luminous_glass.png"
+    "light_blue_stained_luminous_glass": {
+      "textures": "textures/blocks/light_blue_stained_luminous_glass.png"
     },
     "light_gray_stained_luminous_glass": {
       "textures": "textures/blocks/light_gray_stained_luminous_glass.png"
