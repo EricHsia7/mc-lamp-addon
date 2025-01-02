@@ -33,6 +33,18 @@ function isRedstoneRelated(block) {
   }
 }
 
+function parseCoordinates(inputString) {
+  // @param {string} inputString - "x y z x1 y1 z1"
+  const pattern = /^([\d.\-\~]+)\s+([\d.\-\~]+)\s+([\d.\-\~]+)\s+([\d.\-\~]+)\s+([\d.\-\~]+)\s+([\d.\-\~]+)$/;
+  const match = inputString.trim().match(pattern);
+  if (match) {
+    return match.slice(1).map((p) => String(p).trim());
+  } else {
+    // Return null if input doesn't match the expected format
+    return null;
+  }
+}
+
 // Function to check blocks and set connection states
 function updatePlacedBlockConnections(event) {
   const replacedBlock = event.block; // This is the block replaced by the placed block (air is also a type of blocks)
@@ -183,6 +195,82 @@ function updatePistonPushedBlockConnections(event) {
   }, 4);
 }
 
+function updateCommandCalledBlockConnections(sourceParty, eventMessage) {
+  const sourcePartyDimension = sourceParty.dimension;
+  const sourcePartyLocation = sourceParty.location;
+  const selectionCoordinates = parseCoordinates(eventMessage);
+  let processedSelectionCoordinates = [];
+  let index = 0;
+  for (const selectionCoordinate of selectionCoordinates) {
+    let relativeCoordinate = 0;
+    if (index === 0 || index === 3) {
+      relativeCoordinate = sourcePartyLocation.x;
+    }
+    if (index === 1 || index === 4) {
+      relativeCoordinate = sourcePartyLocation.y;
+    }
+    if (index === 2 || index === 5) {
+      relativeCoordinate = sourcePartyLocation.z;
+    }
+    if (!isNaN(parseFloat(selectionCoordinate))) {
+      processedSelectionCoordinates.push(parseFloat(selectionCoordinate));
+    }
+    if (selectionCoordinate === '~') {
+      processedSelectionCoordinates.push(relativeCoordinate);
+    }
+    if (/~[\d\-]+/.test(selectionCoordinate)) {
+      processedSelectionCoordinates.push(relativeCoordinate + parseFloat(selectionCoordinate.match(/~([\d\-]+)/)[1]));
+    }
+    index += 1;
+  }
+
+  const minX = Math.min(processedSelectionCoordinates[0], processedSelectionCoordinates[3]);
+  const maxX = Math.max(processedSelectionCoordinates[0], processedSelectionCoordinates[3]);
+  const minY = Math.min(processedSelectionCoordinates[1], processedSelectionCoordinates[4]);
+  const maxY = Math.max(processedSelectionCoordinates[1], processedSelectionCoordinates[4]);
+  const minZ = Math.min(processedSelectionCoordinates[2], processedSelectionCoordinates[5]);
+  const maxZ = Math.max(processedSelectionCoordinates[2], processedSelectionCoordinates[5]);
+
+  const sizeX = Math.abs(maxX - minX);
+  const sizeY = Math.abs(maxY - minY);
+  const sizeZ = Math.abs(maxZ - minZ);
+
+  if (sizeX * sizeY * sizeZ <= 32768) {
+    for (let i = minX; i < maxX; i++) {
+      for (let j = minY; j < maxY; j++) {
+        for (let k = minZ; k < maxZ; k++) {
+          const location = {
+            x: i,
+            y: j,
+            z: k
+          };
+          const block = sourcePartyDimension.getBlock(location);
+          const blockType = block.typeId;
+          const connectable = block.hasTag('lamp:connectable');
+          if (connectable) {
+            for (const [direction, offset] of Object.entries(directions)) {
+              const neighborLocation = {
+                x: location.x + offset.x,
+                y: location.y + offset.y,
+                z: location.z + offset.z
+              };
+              const neighborBlock = sourcePartyDimension.getBlock(neighborLocation);
+              const neighborBlockType = neighborBlock.typeId;
+              const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
+              if (neighborBlock && neighborBlockType === blockType && neighborBlockConnectable) {
+                block.setPermutation(block.permutation.withState(`lamp:connection_${direction}`, true));
+                neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
+              } else {
+                block.setPermutation(block.permutation.withState(`lamp:connection_${direction}`, false));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // Event listener for block placement
 world.afterEvents.playerPlaceBlock.subscribe((event) => {
   updatePlacedBlockConnections(event);
@@ -196,6 +284,41 @@ world.afterEvents.playerBreakBlock.subscribe((event) => {
 // Event listener for piston pushes
 world.afterEvents.pistonActivate.subscribe((event) => {
   updatePistonPushedBlockConnections(event);
+});
+
+// Event lister for command execution
+system.afterEvents.scriptEventReceive.subscribe((event) => {
+  const sourceType = event.sourceType;
+  let sourceParty = {};
+  switch (sourceType) {
+    case 'Block':
+      sourceParty = event.sourceBlock;
+      break;
+    case 'Entity':
+      sourceParty = event.sourceEntity;
+      break;
+    case 'NPCDialogue':
+      sourceParty = event.sourceEntity;
+      break;
+    case 'Server':
+      sourceParty = {};
+      break;
+    default:
+      sourceParty = {};
+      break;
+  }
+  const eventId = event.id;
+  const eventMessage = event.message;
+  switch (eventId) {
+    case 'lamp:update_block_connections':
+      updateCommandCalledBlockConnections(sourceParty, eventMessage);
+      break;
+    case 'lamp:ubc':
+      updateCommandCalledBlockConnections(sourceParty, eventMessage);
+      break;
+    default:
+      break;
+  }
 });
 
 const LampBistableComponent = {

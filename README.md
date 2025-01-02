@@ -46,7 +46,7 @@ If the above method doesn't work, you can manually move the `.mcpack` file to th
 - Move the extracted folder to the `games/com.mojang/resource_packs` or `games/com.mojang/behavior_packs` directory, depending on the type of pack.
 - Restart Minecraft and check if the pack appears in your settings.
 
-## Lamps
+## Blocks
 
 ### Caged Light Bulb
 
@@ -97,3 +97,15 @@ Emits dynamic and colorful light at level 15.
 ### Toast Lamp
 
 Designed to resemble a slice of toast, this whimsical lamp adds a playful touch to any room. It emits a warm, golden glow reminiscent of perfectly toasted bread.
+
+## Commands
+
+### Update Block Connections
+
+```text
+/scriptevent lamp:update_block_connections x y z x1 y1 z1
+```
+
+```text
+/scriptevent lamp:ubc x y z x1 y1 z1
+```
