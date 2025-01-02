@@ -223,7 +223,7 @@ function updateCommandCalledBlockConnections(sourceParty, eventMessage) {
     }
     index += 1;
   }
-  
+
   const minX = Math.min(processedSelectionCoordinates[0], processedSelectionCoordinates[3]);
   const maxX = Math.max(processedSelectionCoordinates[0], processedSelectionCoordinates[3]);
   const minY = Math.min(processedSelectionCoordinates[1], processedSelectionCoordinates[4]);
@@ -310,7 +310,7 @@ system.afterEvents.scriptEventReceive.subscribe((event) => {
       updateCommandCalledBlockConnections(sourceParty, eventMessage);
       break;
     case 'lamp:ubc':
-      updateBrokenBlockConnections(sourceParty, eventMessage);
+      updateCommandCalledBlockConnections(sourceParty, eventMessage);
       break;
     default:
       break;
