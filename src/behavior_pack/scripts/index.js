@@ -223,17 +223,49 @@ function updateCommandCalledBlockConnections(sourceParty, eventMessage) {
     }
     index += 1;
   }
+  
+  const minX = Math.min(processedSelectionCoordinates[0], processedSelectionCoordinates[3]);
+  const maxX = Math.max(processedSelectionCoordinates[0], processedSelectionCoordinates[3]);
+  const minY = Math.min(processedSelectionCoordinates[1], processedSelectionCoordinates[4]);
+  const maxY = Math.max(processedSelectionCoordinates[1], processedSelectionCoordinates[4]);
+  const minZ = Math.min(processedSelectionCoordinates[2], processedSelectionCoordinates[5]);
+  const maxZ = Math.max(processedSelectionCoordinates[2], processedSelectionCoordinates[5]);
 
-  const selectionPoint0 = {
-    x: selectionPoints[0],
-    y: selectionPoints[1],
-    z: selectionPoints[2]
-  };
-  const selectionPoint1 = {
-    x: selectionPoints[3],
-    y: selectionPoints[4],
-    z: selectionPoints[5]
-  };
+  const sizeX = Math.abs(maxX - minX);
+  const sizeY = Math.abs(maxY - minY);
+  const sizeZ = Math.abs(maxZ - minZ);
+
+  if (sizeX * sizeY * sizeZ <= 32768) {
+    for (let i = minX; i < maxX; i++) {
+      for (let j = minY; j < maxY; j++) {
+        for (let k = minZ; k < maxZ; k++) {
+          const location = {
+            x: i,
+            y: j,
+            z: k
+          };
+          const block = sourcePartyDimension.getBlock(location);
+          const blockType = block.typeId;
+          const connectable = block.hasTag('lamp:connectable');
+          if (connectable) {
+            for (const [direction, offset] of Object.entries(directions)) {
+              const neighborLocation = {
+                x: location.x + offset.x,
+                y: location.y + offset.y,
+                z: location.z + offset.z
+              };
+              const neighborBlock = sourcePartyDimension.getBlock(neighborLocation);
+              const neighborBlockType = neighborBlock.typeId;
+              const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
+              if (neighborBlock && neighborBlockType === blockType && neighborBlockConnectable) {
+                neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, false));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Event listener for block placement
