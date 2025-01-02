@@ -258,7 +258,10 @@ function updateCommandCalledBlockConnections(sourceParty, eventMessage) {
               const neighborBlockType = neighborBlock.typeId;
               const neighborBlockConnectable = neighborBlock.hasTag('lamp:connectable');
               if (neighborBlock && neighborBlockType === blockType && neighborBlockConnectable) {
-                neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, false));
+                block.setPermutation(block.permutation.withState(`lamp:connection_${direction}`, true));
+                neighborBlock.setPermutation(neighborBlock.permutation.withState(`lamp:connection_${getInverseDirection(direction)}`, true));
+              } else {
+                block.setPermutation(block.permutation.withState(`lamp:connection_${direction}`, false));
               }
             }
           }
