@@ -49,6 +49,9 @@
     },
     "white_stained_luminous_glass": {
       "textures": "textures/blocks/white_stained_luminous_glass.png"
+    },
+    "red_stained_luminous_glass": {
+      "textures": "textures/blocks/red_stained_luminous_glass.png"
     }
   }
 }
