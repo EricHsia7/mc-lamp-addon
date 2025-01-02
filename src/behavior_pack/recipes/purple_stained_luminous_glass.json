@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lamp:purple_stained_luminous_glass"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["###", "#G#", "###"],
+    "key": {
+      "#": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "G": {
+        "item": "minecraft:purple_stained_glass"
+      }
+    },
+    "result": {
+      "item": "lamp:purple_stained_luminous_glass",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glowstone_dust"
+      }
+    ]
+  }
+}

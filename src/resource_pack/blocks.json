@@ -41,5 +41,53 @@
   },
   "lamp:luminous_glass": {
     "sound": "glass"
+  },
+  "lamp:white_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:red_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:blue_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:cyan_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:gray_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:lime_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:yellow_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:orange_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:green_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:brown_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:black_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:light_blue_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:light_gray_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:pink_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:purple_stained_luminous_glass": {
+    "sound": "glass"
+  },
+  "lamp:magenta_stained_luminous_glass": {
+    "sound": "glass"
   }
 }
