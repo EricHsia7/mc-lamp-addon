@@ -76,6 +76,9 @@
     },
     "brown_stained_luminous_glass": {
       "textures": "textures/blocks/brown_stained_luminous_glass.png"
+    },
+    "black_stained_luminous_glass": {
+      "textures": "textures/blocks/black_stained_luminous_glass.png"
     }
   }
 }
