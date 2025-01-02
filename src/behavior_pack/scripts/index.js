@@ -286,6 +286,7 @@ world.afterEvents.pistonActivate.subscribe((event) => {
   updatePistonPushedBlockConnections(event);
 });
 
+// Event lister for command execution
 system.afterEvents.scriptEventReceive.subscribe((event) => {
   const sourceType = event.sourceType;
   let sourceParty = {};
