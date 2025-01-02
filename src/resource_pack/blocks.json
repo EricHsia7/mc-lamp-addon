@@ -59,5 +59,8 @@
   },
   "lamp:lime_stained_luminous_glass": {
     "sound": "glass"
+  },
+  "lamp:yellow_stained_luminous_glass": {
+    "sound": "glass"
   }
 }
