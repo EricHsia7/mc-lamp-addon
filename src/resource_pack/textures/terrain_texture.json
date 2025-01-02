@@ -85,6 +85,9 @@
     },
     "light_gray_stained_luminous_glass": {
       "textures": "textures/blocks/light_gray_stained_luminous_glass.png"
+    },
+    "pink_stained_luminous_glass": {
+      "textures": "textures/blocks/pink_stained_luminous_glass.png"
     }
   }
 }

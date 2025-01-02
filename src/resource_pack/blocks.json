@@ -80,5 +80,8 @@
   },
   "lamp:light_gray_stained_luminous_glass": {
     "sound": "glass"
+  },
+  "lamp:pink_stained_luminous_glass": {
+    "sound": "glass"
   }
 }
