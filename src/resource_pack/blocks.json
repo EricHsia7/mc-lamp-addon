@@ -47,5 +47,8 @@
   },
   "lamp:red_stained_luminous_glass": {
     "sound": "glass"
+  },
+  "lamp:blue_stained_luminous_glass": {
+    "sound": "glass"
   }
 }
