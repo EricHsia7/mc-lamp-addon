@@ -91,6 +91,9 @@
     },
     "purple_stained_luminous_glass": {
       "textures": "textures/blocks/purple_stained_luminous_glass.png"
+    },
+    "magenta_stained_luminous_glass": {
+      "textures": "textures/blocks/magenta_stained_luminous_glass.png"
     }
   }
 }
