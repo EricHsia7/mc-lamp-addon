@@ -68,5 +68,8 @@
   },
   "lamp:green_stained_luminous_glass": {
     "sound": "glass"
+  },
+  "lamp:brown_stained_luminous_glass": {
+    "sound": "glass"
   }
 }
