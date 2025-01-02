@@ -55,6 +55,9 @@
     },
     "blue_stained_luminous_glass": {
       "textures": "textures/blocks/blue_stained_luminous_glass.png"
+    },
+    "cyan_stained_luminous_glass": {
+      "textures": "textures/blocks/cyan_stained_luminous_glass.png"
     }
   }
 }
