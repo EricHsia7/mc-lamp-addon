@@ -236,9 +236,9 @@ function updateCommandCalledBlockConnections(sourceParty, eventMessage) {
   const sizeZ = Math.abs(maxZ - minZ);
 
   if (sizeX * sizeY * sizeZ <= 32768) {
-    for (let i = minX; i < maxX; i++) {
-      for (let j = minY; j < maxY; j++) {
-        for (let k = minZ; k < maxZ; k++) {
+    for (let i = minX - 1; i < maxX + 1; i++) {
+      for (let j = minY - 1; j < maxY + 1; j++) {
+        for (let k = minZ - 1; k < maxZ + 1; k++) {
           const location = {
             x: i,
             y: j,
