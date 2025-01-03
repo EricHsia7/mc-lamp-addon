@@ -5,7 +5,7 @@
 </picture>
 
 <div align="center">
-Lamp, an addon for Minecraft Bedrock/Pocket Edition, introduces various types of lamps into your world.
+Lamp is an addon for Minecraft Bedrock/Pocket Edition to light up your worlds.
 </div>
 
 ## Install
