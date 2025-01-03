@@ -48,9 +48,17 @@ If the above method doesn't work, you can manually move the `.mcpack` file to th
 
 ## Blocks
 
+### Black Stained Luminous Glass
+
+### Blue Stained Luminous Glass
+
+### Brown Stained Luminous Glass
+
 ### Caged Light Bulb
 
 Comprising a wooden cage with a light bulb inside, it illuminates surroundings with light at level 15.
+
+### Cyan Stained Luminous Glass
 
 ### Candle Lamp
 
@@ -66,9 +74,17 @@ Emits subtle, cold light that is perfect for a dark, tranquil room.
 
 ### Glowstone Dust Bottle
 
+### Gray Stained Luminous Glass
+
+### Green Stained Luminous Glass
+
 ### Incandescent Light Bulb
 
 Provides a warm, soft light that is ideal for creating cozy and inviting spaces in your Minecraft world.
+
+### Light Blue Stained Luminous Glass
+
+### Light Gray Stained Luminous Glass
 
 ### Light Tube
 
@@ -78,11 +94,21 @@ Offers a sleek and efficient lighting solution that can be used to create contin
 
 Embedded with glowstone dust, the luminous glass can illuminate your windows elegantly. Plus, they can connect with each other, making a glass wall seamless.
 
+### Magenta Stained Luminous Glass
+
 ### Neon Lantern
 
 Featuring dark frames and glass with excited gas inside the container, it caters to a warm, hospitable atmosphere.
 
+### Orange Stained Luminous Glass
+
+### Pink Stained Luminous Glass
+
 ### Polished Glowstone
+
+### Purple Stained Luminous Glass
+
+### Red Stained Luminous Glass
 
 ### Redstone Signal Indicator
 
@@ -97,6 +123,10 @@ Emits dynamic and colorful light at level 15.
 ### Toast Lamp
 
 Designed to resemble a slice of toast, this whimsical lamp adds a playful touch to any room. It emits a warm, golden glow reminiscent of perfectly toasted bread.
+
+### White Stained Luminous Glass
+
+### Yellow Stained Luminous Glass
 
 ## Commands
 
