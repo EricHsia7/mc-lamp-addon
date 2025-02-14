@@ -71,6 +71,9 @@
     "orange_stained_luminous_glass": {
       "textures": "textures/blocks/orange_stained_luminous_glass.png"
     },
+    "pale_oak_street_lamp": {
+      "textures": "textures/blocks/pale_oak_street_lamp.png"
+    },
     "green_stained_luminous_glass": {
       "textures": "textures/blocks/green_stained_luminous_glass.png"
     },

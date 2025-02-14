@@ -2,13 +2,13 @@
   "format_version": "1.21.40",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "lamp:street_lamp"
+      "identifier": "lamp:pale_oak_street_lamp"
     },
     "tags": ["crafting_table"],
-    "pattern": ["III", "G#G", "III"],
+    "pattern": ["PPP", "G#G", "PPP"],
     "key": {
-      "I": {
-        "item": "minecraft:iron_ingot"
+      "P": {
+        "item": "minecraft:pale_oak_planks"
       },
       "G": {
         "item": "minecraft:glass"
@@ -18,11 +18,11 @@
       }
     },
     "result": {
-      "item": "lamp:street_lamp"
+      "item": "lamp:pale_oak_street_lamp"
     },
     "unlock": [
       {
-        "item": "minecraft:iron_ingot"
+        "item": "minecraft:pale_oak_planks"
       }
     ]
   }
